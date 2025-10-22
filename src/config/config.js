@@ -15,6 +15,25 @@ const config = {
     temperature: parseFloat(import.meta.env.VITE_TEMPERATURE) || 0.7
   },
 
+  // 有道智云TTS配置
+  youdao: {
+    appKey: '3d1f75da0452fa8b',
+    appSecret: 'U3Y8rzZnmx9GWyloXw0OFl9D8HPOrAy5',
+    ttsUrl: 'https://openapi.youdao.com/ttsapi',
+    defaultVoice: 'youxiaoqin',
+    defaultSpeed: '1',
+    defaultVolume: '1.0',
+    defaultFormat: 'mp3'
+  },
+
+  // Coze API配置
+  coze: {
+    apiKey: 'pat_5zHtDGQSPrCl2jvL1rR2ETUIWemvJ50CgVVr17x3f4nCLqNiJITRjEuNmF7hPFoa',
+    baseUrl: 'https://api.coze.cn/v1',
+    workflowId: '7563497461432500243',
+    streamRunUrl: 'https://api.coze.cn/v1/workflow/stream_run'
+  },
+
   // 功能开关
   features: {
     imageGeneration: import.meta.env.VITE_ENABLE_IMAGE_GENERATION === 'true',
