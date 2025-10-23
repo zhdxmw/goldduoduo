@@ -1,12 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import {
+  kidsWords,
+  childWords,
+  teenWords,
+  youngWords,
+  adultWords,
+} from "../config/words";
 import "./CreateStoryPage.css";
+const maxWords = 10;
 
 const CreateStoryPage = () => {
+  const [wordDictionaries, setWordDictionaries] = useState(kidsWords);
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     category: "童话",
-    ageGroup: "7-12岁",
+    ageGroup: "kid",
     themeCharacter: "",
     selectedWords: [],
   });
@@ -23,9 +32,10 @@ const CreateStoryPage = () => {
   ];
 
   const ageGroups = [
+    { id: "kid", name: "学龄前", icon: "👶" },
     { id: "child", name: "7-12岁", icon: "👧" },
     { id: "teen", name: "13-17岁", icon: "🧑‍🎓" },
-    { id: "young-adult", name: "18-24岁", icon: "👨‍💼" },
+    { id: "young", name: "18-24岁", icon: "👨‍💼" },
     { id: "adult", name: "24岁以上", icon: "👩‍💼" },
   ];
 
@@ -228,148 +238,31 @@ const CreateStoryPage = () => {
     },
   ];
 
-  const wordDictionaries = {
-    technology: {
-      name: "科技与设备",
-      icon: "🔬",
-      words: [
-        { en: "technology", cn: "技术" },
-        { en: "device", cn: "设备，装置" },
-        { en: "gadget", cn: "小工具，小器械" },
-        { en: "screen", cn: "屏幕" },
-        { en: "hologram", cn: "全息图" },
-        { en: "interface", cn: "界面，接口" },
-        { en: "sensor", cn: "传感器" },
-        { en: "drone", cn: "无人机" },
-        { en: "robot", cn: "机器人" },
-        { en: "android", cn: "人形机器人" },
-        { en: "AI", cn: "人工智能" },
-        { en: "data", cn: "数据" },
-        { en: "digital", cn: "数字的" },
-        { en: "virtual", cn: "虚拟的" },
-        { en: "network", cn: "网络" },
-        { en: "system", cn: "系统" },
-        { en: "energy", cn: "能量" },
-        { en: "power source", cn: "能源" },
-        { en: "battery", cn: "电池" },
-        { en: "laser", cn: "激光" },
-      ],
-    },
-    future_society: {
-      name: "未来社会",
-      icon: "🏙️",
-      words: [
-        { en: "future", cn: "未来" },
-        { en: "society", cn: "社会" },
-        { en: "urban", cn: "城市的" },
-        { en: "citizen", cn: "公民" },
-        { en: "colony", cn: "殖民地" },
-        { en: "habitat", cn: "栖息地，居住舱" },
-        { en: "station", cn: "站，空间站" },
-        { en: "sustainable", cn: "可持续的" },
-        { en: "advanced", cn: "先进的" },
-        { en: "modern", cn: "现代的" },
-        { en: "innovate", cn: "创新" },
-        { en: "generation", cn: "一代，一代人" },
-        { en: "global", cn: "全球的" },
-        { en: "resource", cn: "资源" },
-        { en: "pollution", cn: "污染" },
-        { en: "solution", cn: "解决方案" },
-        { en: "challenge", cn: "挑战" },
-        { en: "progress", cn: "进步" },
-        { en: "ethic", cn: "伦理" },
-        { en: "privacy", cn: "隐私" },
-      ],
-    },
-    space_exploration: {
-      name: "太空探索",
-      icon: "🚀",
-      words: [
-        { en: "space", cn: "太空" },
-        { en: "planet", cn: "行星" },
-        { en: "star", cn: "恒星" },
-        { en: "galaxy", cn: "星系" },
-        { en: "universe", cn: "宇宙" },
-        { en: "alien", cn: "外星人" },
-        { en: "spacecraft", cn: "宇宙飞船" },
-        { en: "spaceship", cn: "宇宙飞船" },
-        { en: "launch", cn: "发射" },
-        { en: "orbit", cn: "轨道" },
-        { en: "gravity", cn: "重力" },
-        { en: "explore", cn: "探索" },
-        { en: "mission", cn: "任务" },
-        { en: "astronaut", cn: "宇航员" },
-        { en: "cosmonaut", cn: "(俄)宇航员" },
-        { en: "satellite", cn: "卫星" },
-        { en: "comet", cn: "彗星" },
-        { en: "asteroid", cn: "小行星" },
-        { en: "solar system", cn: "太阳系" },
-      ],
-    },
-    action_adventure: {
-      name: "动作与冒险",
-      icon: "⚡",
-      words: [
-        { en: "adventure", cn: "冒险" },
-        { en: "explore", cn: "探索" },
-        { en: "discover", cn: "发现" },
-        { en: "travel", cn: "旅行" },
-        { en: "journey", cn: "旅程" },
-        { en: "navigate", cn: "导航，操纵" },
-        { en: "control", cn: "控制" },
-        { en: "operate", cn: "操作" },
-        { en: "activate", cn: "激活" },
-        { en: "deactivate", cn: "停用" },
-        { en: "escape", cn: "逃跑" },
-        { en: "survive", cn: "生存" },
-        { en: "search", cn: "搜索" },
-        { en: "find", cn: "找到" },
-        { en: "solve", cn: "解决" },
-        { en: "communicate", cn: "沟通" },
-        { en: "warn", cn: "警告" },
-        { en: "danger", cn: "危险" },
-        { en: "secret", cn: "秘密" },
-        { en: "mystery", cn: "谜团" },
-      ],
-    },
-    descriptive: {
-      name: "描述性词汇",
-      icon: "✨",
-      words: [
-        { en: "new", cn: "新的" },
-        { en: "modern", cn: "现代的" },
-        { en: "advanced", cn: "先进的" },
-        { en: "intelligent", cn: "智能的" },
-        { en: "automatic", cn: "自动的" },
-        { en: "efficient", cn: "高效的" },
-        { en: "powerful", cn: "强大的" },
-        { en: "fast", cn: "快速的" },
-        { en: "silent", cn: "安静的" },
-        { en: "bright", cn: "明亮的" },
-        { en: "dark", cn: "黑暗的" },
-        { en: "huge", cn: "巨大的" },
-        { en: "tiny", cn: "微小的" },
-        { en: "strange", cn: "奇怪的" },
-        { en: "unknown", cn: "未知的" },
-        { en: "possible", cn: "可能的" },
-        { en: "impossible", cn: "不可能的" },
-        { en: "exciting", cn: "令人兴奋的" },
-        { en: "dangerous", cn: "危险的" },
-      ],
-    },
-    core_concepts: {
-      name: "核心概念",
-      icon: "💡",
-      words: [
-        { en: "time", cn: "时间" },
-        { en: "reality", cn: "现实" },
-        { en: "simulation", cn: "模拟" },
-        { en: "code", cn: "代码" },
-        { en: "program", cn: "程序" },
-        { en: "signal", cn: "信号" },
-      ],
-    },
-  };
+  useEffect(() => {
+    console.log("formData.ageGroup", formData.ageGroup);
+
+    switch (formData.ageGroup) {
+      case "kid":
+        setWordDictionaries(kidsWords);
+        break;
+      case "child":
+        setWordDictionaries(childWords);
+        break;
+      case "teen":
+        setWordDictionaries(teenWords);
+        break;
+      case "young":
+        setWordDictionaries(youngWords);
+        break;
+
+      case "adult":
+        setWordDictionaries(adultWords);
+        break;
+      default:
+        setWordDictionaries(kidsWords);
+        break;
+    }
+  }, [formData.ageGroup]);
 
   const handleInputChange = (field, value) => {
     setFormData((prev) => ({
@@ -391,8 +284,8 @@ const CreateStoryPage = () => {
         };
       } else {
         // 选择单词，但不超过20个
-        if (currentWords.length >= 10) {
-          alert("最多只能选择10个单词");
+        if (currentWords.length >= maxWords) {
+          // alert("最多只能选择10个单词");
           return prev;
         }
         return {
@@ -401,6 +294,14 @@ const CreateStoryPage = () => {
         };
       }
     });
+  };
+
+  // 清空已选单词
+  const handleClearWords = () => {
+    setFormData((prev) => ({
+      ...prev,
+      selectedWords: [],
+    }));
   };
 
   // 弹窗控制函数
@@ -422,16 +323,55 @@ const CreateStoryPage = () => {
     closeThemeModal();
   };
 
-  const handleSubmit = () => {
-    if (!formData.selectedWords.length) {
-      alert("请选择单词");
+  // 自动推荐填充功能
+  const handleAutoFillWords = () => {
+    // 收集所有可用的单词
+    const allWords = [];
+    Object.values(wordDictionaries).forEach((dictionary) => {
+      allWords.push(...dictionary.words);
+    });
+
+    // 过滤掉已经选中的单词
+    const availableWords = allWords.filter(
+      (word) =>
+        !formData.selectedWords.some((selected) => selected.en === word.en)
+    );
+
+    // 如果可用单词不足，提示用户
+    if (availableWords.length === 0) {
+      // alert("所有单词都已选择！");
       return;
     }
 
-    return
+    // 计算需要选择的单词数量（最多10个，减去已选择的数量）
+    const remainingSlots = maxWords - formData.selectedWords.length;
+    const wordsToSelect = Math.min(remainingSlots, availableWords.length);
+
+    if (wordsToSelect <= 0) {
+      // alert("已达到最大选择数量（10个）！");
+      return;
+    }
+
+    // 随机选择单词
+    const shuffled = [...availableWords].sort(() => Math.random() - 0.5);
+    const randomWords = shuffled.slice(0, wordsToSelect);
+
+    // 更新选中的单词
+    setFormData((prev) => ({
+      ...prev,
+      selectedWords: [...prev.selectedWords, ...randomWords],
+    }));
+  };
+
+  const handleSubmit = () => {
+    if (!formData.selectedWords.length) {
+      // alert("请选择单词");
+      return;
+    }
+
+    return;
     // 这里可以添加创建故事的逻辑
     console.log("创建故事:", formData);
-    alert("故事创建成功！");
     navigate("/home");
   };
 
@@ -479,9 +419,9 @@ const CreateStoryPage = () => {
                 <button
                   key={ageGroup.id}
                   className={`category-option ${
-                    formData.ageGroup === ageGroup.name ? "active" : ""
+                    formData.ageGroup === ageGroup.id ? "active" : ""
                   }`}
-                  onClick={() => handleInputChange("ageGroup", ageGroup.name)}
+                  onClick={() => handleInputChange("ageGroup", ageGroup.id)}
                 >
                   <span className="category-icon">{ageGroup.icon}</span>
                   <span className="category-name">{ageGroup.name}</span>
@@ -495,8 +435,28 @@ const CreateStoryPage = () => {
             <label className="form-label">
               单词选择
               <span className="word-count">
-                ({formData.selectedWords.length}/10)
+                ({formData.selectedWords.length}/{maxWords})
               </span>
+              {formData.selectedWords.length < maxWords && (
+                <span
+                  className="inline-auto-fill"
+                  style={{ display: 'inline-block', marginLeft: '20px' }}
+                  onClick={handleAutoFillWords}
+                  title="自动填充"
+                >
+                  🎲 自动填充
+                </span>
+              )}
+              {formData.selectedWords.length > 0 && (
+                  <span
+                    className="clear-words-btn"
+                    onClick={handleClearWords}
+                    style={{ display: 'inline-block', marginLeft: '20px' }}
+                    title="清空所有已选单词"
+                  >
+                    🗑️ 清空
+                  </span>
+                )}
             </label>
             <button className="word-select-trigger" onClick={openWordModal}>
               <span className="trigger-icon">📚</span>
@@ -572,7 +532,16 @@ const CreateStoryPage = () => {
             <div className="modal-header">
               <h3>选择单词</h3>
               <div className="modal-word-count">
-                已选择 {formData.selectedWords.length}/10 个单词
+                已选择 {formData.selectedWords.length}/{maxWords} 个单词
+                {formData.selectedWords.length > 0 && (
+                  <button
+                    className="clear-words-btn"
+                    onClick={handleClearWords}
+                    title="清空所有已选单词"
+                  >
+                    🗑️ 清空
+                  </button>
+                )}
               </div>
               <button className="modal-close" onClick={closeWordModal}>
                 ×
@@ -611,6 +580,9 @@ const CreateStoryPage = () => {
             </div>
 
             <div className="modal-footer">
+              <button className="modal-auto-fill" onClick={handleAutoFillWords}>
+                自动推荐填充
+              </button>
               <button className="modal-confirm" onClick={closeWordModal}>
                 确认选择
               </button>
