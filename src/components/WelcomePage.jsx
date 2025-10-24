@@ -13,11 +13,12 @@ const WelcomePage = () => {
     <div className="welcome-page">
       <div className="welcome-container">
         <div className="welcome-header">
-          <div className="app-icon">
-            📚
-          </div>
-          <h1 className="app-title">StoryLearn</h1>
-          <p className="app-subtitle">通过个性化故事学习英语</p>
+         
+          <h1 className="app-title">StoryLoop</h1>
+          <p className="app-subtitle">Your Story, Your Fluency. 
+            <br />
+            极致个性化学习英语
+          </p>
         </div>
 
         <div className="welcome-content">
