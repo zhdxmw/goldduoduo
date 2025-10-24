@@ -30,7 +30,10 @@ const config = {
   coze: {
     apiKey: 'pat_5zHtDGQSPrCl2jvL1rR2ETUIWemvJ50CgVVr17x3f4nCLqNiJITRjEuNmF7hPFoa',
     baseUrl: 'https://api.coze.cn/v1',
-    workflowId: '7563497461432500243',
+    workflows: {
+      imageGeneration: '7563497461432500243',  // 图片生成流程
+      textToSpeech: '7564619896999526442'      // 语言合成流程
+    },
     streamRunUrl: 'https://api.coze.cn/v1/workflow/stream_run'
   },
 

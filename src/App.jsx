@@ -6,6 +6,7 @@ import CategoryPage from './components/CategoryPage';
 import StoryDetailPage from './components/StoryDetailPage';
 import CreateStoryPage from './components/CreateStoryPage';
 import VideoPlayerPage from './components/VideoPlayerPage';
+import TextToSpeechPage from './components/TextToSpeech';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<WelcomePage />} />
+          <Route path="/tts" element={<TextToSpeechPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />
           <Route path="/story/:storyId" element={<StoryDetailPage />} />

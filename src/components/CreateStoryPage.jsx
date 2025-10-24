@@ -7,8 +7,149 @@ import {
   youngWords,
   adultWords,
 } from "../config/words";
+import cozeService from "../services/cozeService";
+import ttsService from "../services/ttsService";
+import imageService from "../services/imageService";
 import "./CreateStoryPage.css";
+import cozeTtsService from "../services/cozeTtsService";
+import StoryDetailComponent from "./StoryDetailComponent";
 const maxWords = 10;
+
+const resultContent = {
+    "content_en": "One day, Harry Potter said to his sister, 'Let's invite the big elephant to our home for dinner!' At home, they eat healthy food and drink juice. After dinner, they eat ice cream and candy. 'What a wonderful dinner!' said the elephant. Everyone is happy.",
+    "detailed_scenes": [
+        {
+            "scene_index": 1,
+            "segments": [
+                {
+                    "text_en": "One day, Harry Potter said to his sister, ",
+                    "text_zh": "一天，哈利·波特对他的妹妹说， ",
+                    "type": "0",
+                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_aa30e7be-7c67-435d-b1dc-e2c8b63d7d08.mp3?lk3s=da27ec82&x-expires=1761546747&x-signature=i6rNsutujLm1q%2FQtEZ%2F8luWEHgY%3D"
+                },
+                {
+                    "text_en": "'Let's invite the big elephant to our home for dinner!'",
+                    "text_zh": "'我们邀请大象到我们家吃晚餐吧！'",
+                    "type": "1",
+                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468512265151512603_fb994351-e112-40a0-9144-d85285b5eedd.mp3?lk3s=da27ec82&x-expires=1761546748&x-signature=5iOlln0oGm8%2Bx%2FwrkZk7kU9WaLs%3D"
+                }
+            ]
+        },
+        {
+            "scene_index": 2,
+            "segments": [
+                {
+                    "text_en": "At home, they eat healthy food and drink juice.",
+                    "text_zh": "在家里，他们吃健康的食物，喝果汁。",
+                    "type": "0",
+                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_405efceb-58e9-4fe3-b989-7b8117464567.mp3?lk3s=da27ec82&x-expires=1761546749&x-signature=m%2FxalGBsgPqxkVhsFG177xWDWCk%3D"
+                }
+            ]
+        },
+        {
+            "scene_index": 3,
+            "segments": [
+                {
+                    "text_en": "After dinner, they eat ice cream and candy.",
+                    "text_zh": "晚饭后，他们吃冰淇淋和糖果。",
+                    "type": "0",
+                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_e4479c49-c40d-4a67-99dd-0265fc1c241b.mp3?lk3s=da27ec82&x-expires=1761546751&x-signature=guphiU1y1c2dfivZTEdoLMMLG3s%3D"
+                }
+            ]
+        },
+        {
+            "scene_index": 4,
+            "segments": [
+                {
+                    "text_en": "'",
+                    "text_zh": "'",
+                    "type": "0",
+                    "audio_url": null
+                },
+                {
+                    "text_en": "What a wonderful dinner!",
+                    "text_zh": "多么美妙的晚餐啊！",
+                    "type": "3",
+                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_4df8f9fe-6f01-4f96-8730-ff3b45d82b82.mp3?lk3s=da27ec82&x-expires=1761546752&x-signature=0%2Bf4ejaxzDgF6dR%2BKMoZiJjU6qk%3D"
+                },
+                {
+                    "text_en": "' said the elephant.",
+                    "text_zh": "' 大象说。",
+                    "type": "0",
+                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_2c09edf8-36cb-4518-8c14-ef9014eba321.mp3?lk3s=da27ec82&x-expires=1761546753&x-signature=zHYkGmUJ%2FIctKp5Md%2FgjRW6ygKA%3D"
+                }
+            ]
+        },
+        {
+            "scene_index": 5,
+            "segments": [
+                {
+                    "text_en": "Everyone is happy.",
+                    "text_zh": "每个人都很开心。",
+                    "type": "0",
+                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_126821c4-48d9-4284-a2f3-4dc3402c3bd1.mp3?lk3s=da27ec82&x-expires=1761546754&x-signature=ous7C7wjkeV0ISTeSakvAGvEqyw%3D"
+                }
+            ]
+        }
+    ],
+    "img_prompt": [
+        {
+            "index": "1",
+            "prompt": "哈利·波特，人类小巫师，身着经典黑色巫师袍、红色领带、白色衬衫，黑色裤子，脚穿黑色皮鞋，面带兴奋的笑容，拉着妹妹的手，兴致勃勃地说话；妹妹同样穿着巫师服饰，粉色领带，好奇期待的表情；旁边有一只体型巨大的灰色大象，耳朵微微扇动，眼神友善。场景是在一片绿色的草地上，周围有五彩斑斓的魔法花朵。水彩绘本风格，画面色彩清新柔和，笔触细腻。配图英文文案为“Let's invite the big elephant to our home for dinner!”，文字白色，字体为圆润的手写体。",
+            "img_url": "https://s.coze.cn/t/INYzkq3Fq3o/"
+        },
+        {
+            "index": "2",
+            "prompt": "哈利·波特和妹妹坐在家里温馨的餐厅，依旧穿着黑色巫师袍、红色和粉色领带、白色衬衫、黑色裤子、黑色皮鞋，开心地笑着，正用魔法餐具吃着健康食物、喝着果汁；大象坐在特制的大椅子上，卷着长鼻子喝果汁。餐厅里有木质的桌椅，墙上挂着魔法画像。水彩绘本风格，画面色彩清新柔和，笔触细腻。配图英文文案无，文字白色，字体为圆润的手写体。",
+            "img_url": "https://s.coze.cn/t/XLewJ0hs4eA/"
+        },
+        {
+            "index": "3",
+            "prompt": "哈利·波特和妹妹坐在餐厅，还是穿着黑色巫师袍等服饰，满足地笑着，正吃着冰淇淋和糖果；大象用长鼻子拿着冰淇淋，吃得很欢快。餐厅里灯光温暖，冰淇淋和糖果散发着诱人的光泽。水彩绘本风格，画面色彩清新柔和，笔触细腻。配图英文文案无，文字白色，字体为圆润的手写体。",
+            "img_url": "https://s.coze.cn/t/HYZ03GRcCPU/"
+        },
+        {
+            "index": "4",
+            "prompt": "大象坐在餐厅，哈利·波特和妹妹在一旁，他们都穿着黑色巫师袍等服饰，满脸愉悦；大象眯着眼睛，开心地说着话，长鼻子轻轻晃动。餐厅里有吃剩的甜点，氛围轻松。水彩绘本风格，画面色彩清新柔和，笔触细腻。配图英文文案为“What a wonderful dinner!”，文字白色，字体为圆润的手写体。",
+            "img_url": "https://s.coze.cn/t/_6DiF9pkqpY/"
+        },
+        {
+            "index": "5",
+            "prompt": "哈利·波特、妹妹和大象站在餐厅门口，都穿着各自的巫师服饰，脸上洋溢着幸福的笑容，互相靠在一起。门外是闪耀着魔法光芒的夜空。水彩绘本风格，画面色彩清新柔和，笔触细腻。配图英文文案无，文字白色，字体为圆润的手写体。",
+            "img_url": "https://s.coze.cn/t/5bvbJqCS0IM/"
+        }
+    ],
+    "scenes": [
+        {
+            "index": "1",
+            "text": "One day, Harry Potter said to his sister, 'Let's invite the big elephant to our home for dinner!'"
+        },
+        {
+            "index": "2",
+            "text": "At home, they eat healthy food and drink juice."
+        },
+        {
+            "index": "3",
+            "text": "After dinner, they eat ice cream and candy."
+        },
+        {
+            "index": "4",
+            "text": "'What a wonderful dinner!' said the elephant."
+        },
+        {
+            "index": "5",
+            "text": "Everyone is happy."
+        }
+    ],
+    "story_intro": {
+        "intro_en": "In the magic world, Harry Potter invites his sister and an elephant to have dinner at home. They eat healthy food and enjoy ice cream and candy, having a great time.",
+        "intro_zh": "在魔法世界里，哈利·波特邀请妹妹和一头大象回家吃晚餐。他们吃健康食物，还享用了冰淇淋和糖果，度过美好时光。"
+    },
+    "story_title": {
+        "title_en": "Harry Potter's Magic Dinner in the Fairy World",
+        "title_zh": "魔法世界里哈利·波特的神奇晚餐"
+    }
+}
 
 const CreateStoryPage = () => {
   const [wordDictionaries, setWordDictionaries] = useState(kidsWords);
@@ -19,10 +160,19 @@ const CreateStoryPage = () => {
     themeCharacter: "",
     selectedWords: [],
   });
+  const [showDetail, setShowDetail] = useState(true);
+
+  const [scenes, setScenes] = useState([]);
+  const [imgScenes, setImgScenes] = useState([]);
 
   // 弹窗状态管理
   const [isWordModalOpen, setIsWordModalOpen] = useState(false);
   const [isThemeModalOpen, setIsThemeModalOpen] = useState(false);
+  
+  // 创作状态管理
+  const [isCreating, setIsCreating] = useState(false);
+  const [createError, setCreateError] = useState(null);
+  const [creationStatus, setCreationStatus] = useState('creating'); // creating, outline_complete, all_complete
 
   const categories = [
     { id: "fairy", name: "童话", icon: "🧚‍♀️" },
@@ -363,16 +513,309 @@ const CreateStoryPage = () => {
     }));
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!formData.selectedWords.length) {
-      // alert("请选择单词");
+      setCreateError("请选择至少一个单词");
       return;
     }
 
-    return;
-    // 这里可以添加创建故事的逻辑
-    console.log("创建故事:", formData);
-    navigate("/home");
+    setIsCreating(true);
+    setCreateError(null);
+    setCreationStatus('creating');
+
+    try {
+      // 构建工作流参数
+      const ageMap = {
+        "kid": '3-6岁',
+        "child": '7-12岁',
+        "teen": '13-17岁',
+        "young": '18-24岁',
+        "adult": '24岁以上',
+      }
+      const parameters = {
+        word: formData.selectedWords.map(word => word.en),
+        style: formData.category || '',
+        age: ageMap[formData.ageGroup] || '',
+        theme: formData.description || ''
+      };
+      
+      // 调用扣子工作流生成故事
+      const result = await cozeService.generateStory(parameters);
+      
+      console.log("工作流调用结果:", result);
+      
+      // 检查结果是否成功
+      if (result.success) {
+        console.log("故事生成成功:", result.content);
+        // 处理故事
+        setCreationStatus('all_complete');
+
+      } else {
+        // 工作流执行失败
+        throw new Error(result.error || "工作流执行失败");
+      }
+      
+    } catch (error) {
+      console.error("故事生成失败:", error);
+      setCreateError(error.message || "故事生成失败，请重试");
+      setCreationStatus('all_complete'); // 出错时重置为完成状态，不显示loading
+    } finally {
+      setIsCreating(false);
+    }
+  };
+
+  // 参考resultContent detailed_scenes 格式 循环调用为text_en生成语音， 新增语音字段
+  const processStoryContent = async (content) => {
+    try {
+      // 检查content是否包含detailed_scenes
+      if (!content || !content.detailed_scenes || !Array.isArray(content.detailed_scenes)) {
+        throw new Error('内容格式不正确，缺少detailed_scenes字段');
+      }
+
+      console.log('开始处理故事内容，生成语音...');
+      
+      // 深拷贝content以避免修改原始数据
+      const processedContent = JSON.parse(JSON.stringify(content));
+      
+      // 统计总的segments数量用于进度显示
+      let totalSegments = 0;
+      let processedSegments = 0;
+      
+      processedContent.detailed_scenes.forEach(scene => {
+        if (scene.segments && Array.isArray(scene.segments)) {
+          totalSegments += scene.segments.length;
+        }
+      });
+
+      console.log(`总共需要处理 ${totalSegments} 个文本片段`);
+
+      // 遍历每个场景
+      for (let sceneIndex = 0; sceneIndex < processedContent.detailed_scenes.length; sceneIndex++) {
+        const scene = processedContent.detailed_scenes[sceneIndex];
+        
+        if (!scene.segments || !Array.isArray(scene.segments)) {
+          console.warn(`场景 ${scene.scene_index} 没有segments，跳过`);
+          continue;
+        }
+
+        console.log(`处理场景 ${scene.scene_index}，包含 ${scene.segments.length} 个片段`);
+
+        // 遍历每个片段
+        for (let segmentIndex = 0; segmentIndex < scene.segments.length; segmentIndex++) {
+          const segment = scene.segments[segmentIndex];
+          
+          // 检查是否有text_en字段且不为空
+          if (!segment.text_en || segment.text_en.trim().length === 0) {
+            console.warn(`场景 ${scene.scene_index} 片段 ${segmentIndex} 的text_en为空，跳过`);
+            processedSegments++;
+            continue;
+          }
+
+          // 过滤掉只包含标点符号的文本
+          const cleanText = segment.text_en.trim();
+          if (cleanText.length <= 2 && /^[^\w\s]*$/.test(cleanText)) {
+            console.log(`跳过标点符号文本: "${cleanText}"`);
+            segment.audio_url = null; // 标记为无需语音
+            processedSegments++;
+            continue;
+          }
+
+          try {
+            console.log(`正在为文本生成语音: "${segment.text_en}"`);
+            const voiceMaps = {
+              "0": "7468518846874533939",
+              "1": "7468512265151512603",
+              "2": "7481299960424742966",
+              "3": "7426725529589661723",
+              "4": "7426720361753952293",
+            }
+            // 调用TTS服务生成语音
+            const ttsResult = await cozeTtsService.generateSpeech(segment.text_en, voiceMaps[segment.type]);
+            if (ttsResult.success && ttsResult.audioUrl) {
+              // 将生成的语音URL添加到segment中
+              segment.audio_url = ttsResult.audioUrl;
+              console.log(`语音生成成功: 场景 ${scene.scene_index} 片段 ${segmentIndex}`);
+            } else {
+              console.error(`语音生成失败: ${ttsResult.error}`);
+              segment.audio_url = null; // 标记为生成失败
+            }
+
+          } catch (error) {
+            console.error(`为文本 "${segment.text_en}" 生成语音时出错:`, error);
+            segment.audio_url = null; // 标记为生成失败
+          }
+
+          processedSegments++;
+          
+          // 显示进度
+          const progress = Math.round((processedSegments / totalSegments) * 100);
+          console.log(`语音生成进度: ${processedSegments}/${totalSegments} (${progress}%)`);
+
+          // 添加小延迟避免API调用过于频繁
+          await new Promise(resolve => setTimeout(resolve, 100));
+        }
+      }
+
+      console.log('故事内容语音生成完成', processedContent);
+      return {
+        success: true,
+        data: processedContent,
+        stats: {
+          totalSegments,
+          processedSegments,
+          successCount: processedContent.detailed_scenes.reduce((count, scene) => {
+            return count + (scene.segments?.filter(seg => seg.audio_url).length || 0);
+          }, 0)
+        }
+      };
+
+    } catch (error) {
+      console.error('处理故事内容时出错:', error);
+      return {
+        success: false,
+        error: error.message,
+        data: content // 返回原始内容
+      };
+    }
+  };
+
+  // 测试语音生成功能
+  const testVoiceGeneration = async () => {
+    try {
+      console.log('开始测试语音生成功能...');
+      
+      // 使用示例数据测试
+      const result = await processStoryContent(resultContent);
+      
+      if (result.success) {
+        console.log('语音生成测试成功！');
+        console.log('统计信息:', result.stats);
+        console.log('处理后的数据:', result.data);
+        
+        // 可以在这里将处理后的数据保存到状态中
+        // setStoryData(result.data);
+      } else {
+        console.error('语音生成测试失败:', result.error);
+      }
+    } catch (error) {
+      console.error('测试过程中出错:', error);
+    }
+  };
+
+  // 处理插图生成 img_prompt
+  const processImageGeneration = async (content) => {
+    try {
+      // 检查content是否包含img_prompt
+      if (!content || !content.img_prompt || !Array.isArray(content.img_prompt)) {
+        throw new Error('内容格式不正确，缺少img_prompt字段');
+      }
+
+      console.log('开始处理插图生成...');
+      
+      // 初始化imageService
+      imageService.initialize();
+      
+      // 深拷贝content以避免修改原始数据
+      const processedContent = JSON.parse(JSON.stringify(content));
+      
+      const totalImages = processedContent.img_prompt.length;
+      let processedImages = 0;
+      let successCount = 0;
+
+      console.log(`总共需要生成 ${totalImages} 张图片`);
+
+      // 遍历每个图片提示
+      for (let i = 0; i < processedContent.img_prompt.length; i++) {
+        const imgItem = processedContent.img_prompt[i];
+        
+        // 检查是否有prompt字段且不为空
+        if (!imgItem.prompt || imgItem.prompt.trim().length === 0) {
+          console.warn(`图片 ${imgItem.index} 的prompt为空，跳过`);
+          imgItem.img_url = null;
+          processedImages++;
+          continue;
+        }
+
+        try {
+          console.log(`正在生成图片 ${imgItem.index}: "${imgItem.prompt.substring(0, 50)}..."`);
+          
+          // 调用图片生成服务
+          const imageUrl = await imageService.generateImage(
+            imgItem.prompt,
+            (progress) => {
+              console.log(`图片 ${imgItem.index} 生成进度:`, progress);
+            }
+          );
+
+          if (imageUrl) {
+            // 将生成的图片URL添加到imgItem中
+            imgItem.img_url = imageUrl;
+            successCount++;
+            console.log(`图片 ${imgItem.index} 生成成功: ${imageUrl}`);
+          } else {
+            console.error(`图片 ${imgItem.index} 生成失败: 未返回URL`);
+            imgItem.img_url = null;
+          }
+
+        } catch (error) {
+          console.error(`生成图片 ${imgItem.index} 时出错:`, error);
+          imgItem.img_url = null;
+        }
+
+        processedImages++;
+        
+        // 显示进度
+        const progress = Math.round((processedImages / totalImages) * 100);
+        console.log(`图片生成进度: ${processedImages}/${totalImages} (${progress}%)`);
+
+        // 添加延迟避免API调用过于频繁
+        if (i < processedContent.img_prompt.length - 1) {
+          await new Promise(resolve => setTimeout(resolve, 2000));
+        }
+      }
+
+      console.log('插图生成完成', processedContent);
+      return {
+        success: true,
+        data: processedContent,
+        stats: {
+          totalImages,
+          processedImages,
+          successCount
+        }
+      };
+
+    } catch (error) {
+      console.error('处理插图生成时出错:', error);
+      return {
+        success: false,
+        error: error.message,
+        data: content // 返回原始内容
+      };
+    }
+  };
+
+  // 测试图片生成功能
+  const testImageGeneration = async () => {
+    try {
+      console.log('开始测试图片生成功能...');
+      
+      // 使用示例数据测试
+      const result = await processImageGeneration(resultContent);
+      
+      if (result.success) {
+        console.log('图片生成测试成功！');
+        console.log('统计信息:', result.stats);
+        console.log('处理后的数据:', result.data);
+        
+        // 可以在这里将处理后的数据保存到状态中
+        // setStoryData(result.data);
+      } else {
+        console.error('图片生成测试失败:', result.error);
+      }
+    } catch (error) {
+      console.error('测试过程中出错:', error);
+    }
   };
 
   const handleBackClick = () => {
@@ -517,11 +960,21 @@ const CreateStoryPage = () => {
 
         {/* 创建按钮 */}
         <div className="create-section">
-          <button className="create-button" onClick={handleSubmit}>
-            <span>🎭</span>
-            <span>AI 智能创作</span>
-            <span>✨</span>
+          {createError && (
+            <div className="error-message">
+              {createError}
+            </div>
+          )}
+          <button 
+            className={`create-button ${isCreating ? 'creating' : ''}`} 
+            onClick={handleSubmit}
+            disabled={isCreating}
+          >
+            <span>{isCreating ? '⏳' : '🎭'}</span>
+            <span>{isCreating ? '正在创作中...' : 'AI 智能创作'}</span>
+            <span>{isCreating ? '⏳' : '✨'}</span>
           </button>
+          
         </div>
       </div>
 
@@ -638,6 +1091,12 @@ const CreateStoryPage = () => {
           </div>
         </div>
       )}
+
+      {
+        showDetail? <StoryDetailComponent storyData={resultContent} creationStatus={creationStatus} /> : null
+      }
+      <button onClick={() => testVoiceGeneration()}>123</button>
+      
     </div>
   );
 };

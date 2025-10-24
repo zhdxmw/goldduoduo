@@ -14,7 +14,7 @@ class ImageService {
   initialize() {
     this.apiKey = config.coze.apiKey;
     this.baseUrl = config.coze.baseUrl;
-    this.workflowId = config.coze.workflowId;
+    this.workflowId = config.coze.workflows.imageGeneration;
     this.streamRunUrl = config.coze.streamRunUrl;
   }
 

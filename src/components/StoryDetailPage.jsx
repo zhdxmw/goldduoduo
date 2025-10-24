@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import StoryDetailComponent from './StoryDetailComponent';
 import './StoryDetailPage.css';
 
 const StoryDetailPage = () => {
@@ -132,127 +133,12 @@ const StoryDetailPage = () => {
   };
 
   return (
-    <div className="story-detail-page">
-      <div className="story-detail-container">
-        {/* 头部 */}
-        <div className="story-header">
-          <button className="back-button" onClick={handleBackClick}>
-            ← 返回
-          </button>
-          
-          {/* 封面区域 */}
-          <div 
-            className="story-cover"
-            style={{ background: `linear-gradient(135deg, ${storyData.color}, ${storyData.color}dd)` }}
-          >
-            <div className="cover-image">{storyData.coverImage}</div>
-            <div className="story-info">
-              <h1 className="story-title">{storyData.title}</h1>
-              <p className="story-subtitle">{storyData.subtitle}</p>
-              <p className="story-description">{storyData.description}</p>
-            </div>
-          </div>
-        </div>
-
-        {/* 创作状态 */}
-        <div className="creation-status">
-          <div className="status-header">
-            <span className="status-icon">{getStatusIcon()}</span>
-            <span className="status-text">{getStatusText()}</span>
-            {(creationStatus === 'creating' || creationStatus === 'outline_complete') && (
-              <div className="loading-spinner"></div>
-            )}
-          </div>
-          
-          {/* 进度条 */}
-          <div className="progress-bar">
-            <div 
-              className="progress-fill"
-              style={{ 
-                width: creationStatus === 'creating' ? '33%' : 
-                       creationStatus === 'outline_complete' ? '66%' : '100%'
-              }}
-            ></div>
-          </div>
-        </div>
-
-        {/* 故事大纲 */}
-        {creationStatus !== 'creating' && (
-          <div className="story-outline">
-            <h3>故事大纲</h3>
-            <div className="outline-list">
-              {storyData.outline.map((item) => (
-                <div key={item.id} className={`outline-item ${item.status}`}>
-                  <div className="outline-number">{item.id}</div>
-                  <div className="outline-title">{item.title}</div>
-                  <div className="outline-status">
-                    {item.status === 'completed' && '✅'}
-                    {item.status === 'creating' && '⏳'}
-                    {item.status === 'pending' && '⏸️'}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* 故事内容卡片 */}
-        {storyData.chapters.some(chapter => chapter.status === 'completed') && (
-          <div className="story-content">
-            <h3>故事内容</h3>
-            <div className="chapters-list">
-              {storyData.chapters.map((chapter) => (
-                <div key={chapter.id} className={`chapter-card ${chapter.status}`}>
-                  <div className="chapter-header">
-                    <div className="chapter-illustration">{chapter.illustration}</div>
-                    <div className="chapter-info">
-                      <h4 className="chapter-title">{chapter.title}</h4>
-                      <div className="chapter-status">
-                        {chapter.status === 'completed' && '已完成'}
-                        {chapter.status === 'creating' && '创作中...'}
-                        {chapter.status === 'pending' && '等待中'}
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {chapter.content && (
-                    <div className="chapter-content">
-                      <p>{chapter.content}</p>
-                      {chapter.words.length > 0 && (
-                        <div className="chapter-words">
-                          <span className="words-label">重点词汇：</span>
-                          {chapter.words.map((word, index) => (
-                            <span key={index} className="word-tag">{word}</span>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  )}
-                  
-                  {chapter.status === 'creating' && (
-                    <div className="creating-indicator">
-                      <div className="creating-animation"></div>
-                      <span>AI正在创作中...</span>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* 开始阅读按钮 */}
-        <div className="action-section">
-          <button 
-            className={`start-reading-button ${creationStatus !== 'all_complete' ? 'disabled' : ''}`}
-            onClick={handleStartReading}
-            disabled={creationStatus !== 'all_complete'}
-          >
-            {creationStatus === 'all_complete' ? '🎭 开始阅读故事' : '⏳ 等待创作完成'}
-          </button>
-        </div>
-      </div>
-    </div>
+    <StoryDetailComponent
+      storyData={storyData}
+      creationStatus={creationStatus}
+      onClose={handleBackClick}
+      onStartReading={handleStartReading}
+    />
   );
 };
 
