@@ -9,13 +9,13 @@ const aisha = {
                     "text_en": "Hello! ",
                     "text_zh": "你好！ ",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_787d056c-8a40-4eb9-96e4-d7fb0dacc0fe.mp3?lk3s=da27ec82&x-expires=1761555346&x-signature=vYtCSG8Jf5N2EMaEGgluNf%2B912c%3D"
+                    "audio_url": "/voices/2-2-1.mp3"
                 },
                 {
                     "text_en": "Elsa meets a giraffe and an elephant.",
                     "text_zh": "艾尔莎遇到了一只长颈鹿和一头大象。",
                     "type": "0",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_74589bf6-0d7e-4bfa-9e8c-c51e8fb84d47.mp3?lk3s=da27ec82&x-expires=1761555347&x-signature=1MqpA0VKczHBbpU5KE1ywHy0Gmw%3D"
+                    "audio_url": "/voices/222233.mp3"
                 }
             ]
         },
@@ -26,7 +26,7 @@ const aisha = {
                     "text_en": "The short elephant and the tall giraffe want to play.",
                     "text_zh": "矮矮的大象和高高的长颈鹿想一起玩。",
                     "type": "0",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_9ffb3459-1be2-41ba-9880-4a87838e4653.mp3?lk3s=da27ec82&x-expires=1761555348&x-signature=ycqCEaFRzNdMirtc8QkJliyGmLw%3D"
+                    "audio_url": "/voices/2-3-1.mp3"
                 }
             ]
         },
@@ -37,7 +37,7 @@ const aisha = {
                     "text_en": "They feel excited.",
                     "text_zh": "他们感到很兴奋。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_615fb76a-f8d9-455e-8306-2e6734b08685.mp3?lk3s=da27ec82&x-expires=1761555349&x-signature=8GFO%2FOoaU6VhTPoCMcvP7CUhRU0%3D"
+                    "audio_url": "/voices/2-4-1.mp3"
                 }
             ]
         },
@@ -48,7 +48,7 @@ const aisha = {
                     "text_en": "But they stop to clean the snow with their finger and stamp.",
                     "text_zh": "但他们停下来，用手指和脚清理积雪。",
                     "type": "0",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_4b34d2c6-536d-4ad2-87dd-b87f25f3cf2e.mp3?lk3s=da27ec82&x-expires=1761555350&x-signature=WnRI9TPEt0Kb%2F6cnD5owl0VhOrE%3D"
+                    "audio_url": "/voices/2-5-1.mp3"
                 }
             ]
         },
@@ -59,7 +59,7 @@ const aisha = {
                     "text_en": "Everyone is happy in the end.",
                     "text_zh": "最后，每个人都很开心。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_45f430ee-c733-4296-8460-880287f60f1c.mp3?lk3s=da27ec82&x-expires=1761555351&x-signature=xFTpKX4jUKirnFEeHPiVPhnPXss%3D"
+                    "audio_url": "/voices/2-6-1.mp3"
                 }
             ]
         }
@@ -494,7 +494,7 @@ const bazong = {
                     "text_en": "I'm Lily, a young and independent girl.",
                     "text_zh": "我是莉莉，一个年轻又独立的女孩。",
                     "type": "3",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_9917d702-f0bc-4d9b-a65a-5a302c80123a.mp3?lk3s=da27ec82&x-expires=1761560104&x-signature=eotmmxhiSJ0bmmbQSLlLS%2FUBfpA%3D"
+                    "audio_url": "/voices/3-2-1.mp3"
                 }
             ]
         },
@@ -505,13 +505,13 @@ const bazong = {
                     "text_en": "One day, ",
                     "text_zh": "有一天，",
                     "type": "0",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_de06bbbe-ee68-4f36-b87e-01959ca6a2fd.mp3?lk3s=da27ec82&x-expires=1761560105&x-signature=dQ9UFzZXW68xLUClbC3oAzLw4Ag%3D"
+                    "audio_url": "/voices/3-4-1.mp3"
                 },
                 {
                     "text_en": "I met an arrogant CEO named Alex in a business meeting.",
                     "text_zh": "我在一次商务会议上遇到了一位名叫亚历克斯的傲慢CEO。",
                     "type": "3",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_601d7b69-0eaf-47d9-982a-799419f2ae5e.mp3?lk3s=da27ec82&x-expires=1761560107&x-signature=AWIhvDp5tXQIcE6P7xPr2IHDtRs%3D"
+                    "audio_url": "/voices/3-4-2.mp3"
                 }
             ]
         },
@@ -522,19 +522,19 @@ const bazong = {
                     "text_en": "He was so bossy, always giving orders. ",
                     "text_zh": "他非常专横，总是发号施令。",
                     "type": "0",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_83a3bb7c-137e-4ee0-9998-b8f514e291c1.mp3?lk3s=da27ec82&x-expires=1761560109&x-signature=KcRhjWiuOu73kLWvef8pjM%2FBI2w%3D"
+                    "audio_url": "/voices/3-5-1.mp3"
                 },
                 {
                     "text_en": "'You should do it this way!'",
                     "text_zh": "'你应该这样做！'",
                     "type": "4",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426720361753952293_a18732c5-703f-4f30-8c76-a32c9c6419ac.mp3?lk3s=da27ec82&x-expires=1761560110&x-signature=Ix%2F37Yo%2Fn1oeKCKSfkviU0n%2BTKY%3D"
+                    "audio_url": "/voices/3-5-2.mp3"
                 },
                 {
                     "text_en": "he said.",
                     "text_zh": "他说。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_2a22c7cf-a60d-42d4-be2c-bf0db87cce54.mp3?lk3s=da27ec82&x-expires=1761560111&x-signature=h6bHzkwuTtanx%2B%2Ft8%2BZWPbDXGNs%3D"
+                    "audio_url": "/voices/3-5-3.mp3"
                 }
             ]
         },
@@ -545,7 +545,7 @@ const bazong = {
                     "text_en": "I thought he was the most annoying man.",
                     "text_zh": "我觉得他是最烦人的男人。",
                     "type": "3",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_42a88731-6082-4641-a7a9-64e379f8c5eb.mp3?lk3s=da27ec82&x-expires=1761560112&x-signature=LI82uzuZgOqiPY5XemVYctTT9dI%3D"
+                    "audio_url": "/voices/3-6-1.mp3"
                 }
             ]
         },
@@ -556,13 +556,13 @@ const bazong = {
                     "text_en": "But there was a mysterious charm about him that I couldn't deny. ",
                     "text_zh": "但他有一种我无法否认的神秘魅力。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_a64d2511-3d40-40d1-a108-cb4058ce2fb0.mp3?lk3s=da27ec82&x-expires=1761560114&x-signature=aZoqOz7RBiZFXAjIjT9RekihcU8%3D"
+                    "audio_url": "/voices/3-7-1.mp3"
                 },
                 {
                     "text_en": "I had a little crush on him secretly.",
                     "text_zh": "我偷偷地有点喜欢上他了。",
                     "type": "3",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_ac322d16-38e3-4503-b890-cb2b8f172edf.mp3?lk3s=da27ec82&x-expires=1761560115&x-signature=OxWO5xnE6EXBhFvSLXP8WNOOEtM%3D"
+                    "audio_url": "/voices/3-7-2.mp3"
                 }
             ]
         },
@@ -573,13 +573,13 @@ const bazong = {
                     "text_en": "As time went on, ",
                     "text_zh": "随着时间的推移，",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_e3fa05c3-f9ee-4124-afdd-df9da0c457ec.mp3?lk3s=da27ec82&x-expires=1761560116&x-signature=HBM%2FvooyktQRkbmmOKAzM9kLxpY%3D"
+                    "audio_url": "/voices/3-8-1.mp3"
                 },
                 {
                     "text_en": "we worked together more often.",
                     "text_zh": "我们更经常地一起工作。",
                     "type": "3",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_0f270e46-ed9c-46f0-8533-f84d7c0c190e.mp3?lk3s=da27ec82&x-expires=1761560117&x-signature=c%2FlfZVbMMPMxmdvh3k211n64FmM%3D"
+                    "audio_url": "/voices/3-8-2.mp3"
                 }
             ]
         },
@@ -590,7 +590,7 @@ const bazong = {
                     "text_en": "Our different ideas often led to chaos.",
                     "text_zh": "我们不同的想法常常导致混乱。",
                     "type": "0",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_6ec55066-88e4-4238-9826-be329870d688.mp3?lk3s=da27ec82&x-expires=1761560119&x-signature=xtq%2BfNoOTLfPD%2BP4MmVe8fx3nME%3D"
+                    "audio_url": "/voices/3-9-1.mp3"
                 }
             ]
         },
@@ -601,7 +601,7 @@ const bazong = {
                     "text_en": "But his determination in work impressed me.",
                     "text_zh": "但他对工作的决心给我留下了深刻的印象。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_397335b0-88b1-4d90-8b84-356abe7af7cf.mp3?lk3s=da27ec82&x-expires=1761560120&x-signature=QSbdQa4mlV2qTZ6xRRhJo47on0Q%3D"
+                    "audio_url": "/voices/3-10-1.mp3"
                 }
             ]
         },
@@ -612,31 +612,31 @@ const bazong = {
                     "text_en": "One day, we had a big argument. ",
                     "text_zh": "有一天，我们大吵了一架。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_915ad199-4cfe-4980-b81e-efea4b52b8db.mp3?lk3s=da27ec82&x-expires=1761560121&x-signature=5X22SO9j%2B1eNGlFGkWB3EUjbavE%3D"
+                    "audio_url": "/voices/3-11-1.mp3"
                 },
                 {
                     "text_en": "'You're too stubborn!'",
                     "text_zh": "'你太固执了！'",
                     "type": "3",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_8aecc6bd-e712-41c5-a350-7e7e169f4203.mp3?lk3s=da27ec82&x-expires=1761560122&x-signature=uWUHcrcMz5PEbjradnXzkGiwELs%3D"
+                    "audio_url": "/voices/3-11-2.mp3"
                 },
                 {
                     "text_en": "I shouted. ",
                     "text_zh": "我喊道。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_e793f8e2-54e1-49e2-9711-7fc9a01d9f9a.mp3?lk3s=da27ec82&x-expires=1761560123&x-signature=GvNvE%2BWM9QBFmUO9ZEcVLlwNTlw%3D"
+                    "audio_url": "/voices/3-11-3.mp3"
                 },
                 {
                     "text_en": "'You need to learn to compromise!'",
                     "text_zh": "'你需要学会妥协！'",
                     "type": "4",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426720361753952293_4d0a2ba0-cd2e-4e4d-b514-350c35b84a63.mp3?lk3s=da27ec82&x-expires=1761560124&x-signature=BT%2BphJccvIBx2tQTZKK3LrrLmQg%3D"
+                    "audio_url": "/voices/3-11-4.mp3"
                 },
                 {
                     "text_en": "he replied.",
                     "text_zh": "他回答道。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_16be770f-eee4-4d60-8397-14d52352832f.mp3?lk3s=da27ec82&x-expires=1761560126&x-signature=Ftkv6UgP%2FRNerQMmP4CVtlLnZOU%3D"
+                    "audio_url": "/voices/3-11-5.mp3"
                 }
             ]
         },
@@ -647,7 +647,7 @@ const bazong = {
                     "text_en": "However, our sensitivity to each other's feelings made us start to understand one another.",
                     "text_zh": "然而，我们对彼此感受的敏感让我们开始互相理解。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_d582bce2-061d-475f-9080-4f434ba45af4.mp3?lk3s=da27ec82&x-expires=1761560127&x-signature=OxBeb%2FDfMM%2FlUmwU%2F9KFTtmACOw%3D"
+                    "audio_url": "/voices/3-12-1.mp3"
                 }
             ]
         },
@@ -658,31 +658,31 @@ const bazong = {
                     "text_en": "We began to have playful conversations. ",
                     "text_zh": "我们开始进行有趣的对话。",
                     "type": "0",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_115d4afd-e90e-4a7f-9c76-74a0928907c0.mp3?lk3s=da27ec82&x-expires=1761560128&x-signature=WQ0OBBj3%2F6IskUXyk43pIF%2Bbt7Y%3D"
+                    "audio_url": "/voices/3-13-1.mp3"
                 },
                 {
                     "text_en": "'You're not that bad,'",
                     "text_zh": "'你没那么坏，'",
                     "type": "3",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_106d3aa7-3d52-48e0-b0b2-729ff1ec463e.mp3?lk3s=da27ec82&x-expires=1761560129&x-signature=rWCV06pmqDzGcF3Z3JPp2FxYX4Y%3D"
+                    "audio_url": "/voices/3-13-2.mp3"
                 },
                 {
                     "text_en": "I said with a smile. ",
                     "text_zh": "我笑着说。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_d08dc2d9-7d01-496d-9efc-e38173888168.mp3?lk3s=da27ec82&x-expires=1761560131&x-signature=HrfnrvT0p5w9YuZQvh7FTzo7rT4%3D"
+                    "audio_url": "/voices/3-13-3.mp3"
                 },
                 {
                     "text_en": "'Neither are you,'",
                     "text_zh": "'你也一样，'",
                     "type": "4",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426720361753952293_b26a37f3-cb31-4a89-b45b-00ad26b22a0e.mp3?lk3s=da27ec82&x-expires=1761560132&x-signature=ddkvMgKJa9LhcMLt79Nf%2BlnVzHY%3D"
+                    "audio_url": "/voices/3-13-4.mp3"
                 },
                 {
                     "text_en": "he answered gently.",
                     "text_zh": "他温柔地回答道。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_2ebccb55-8cb8-4eeb-b1b5-e7653d79cb57.mp3?lk3s=da27ec82&x-expires=1761560133&x-signature=o325H9jRNjP8oGgDsyrVfAtiqBg%3D"
+                    "audio_url": "/voices/3-13-5.mp3"
                 }
             ]
         },
@@ -693,7 +693,7 @@ const bazong = {
                     "text_en": "In the end, we overcame all the difficulties.",
                     "text_zh": "最后，我们克服了所有的困难。",
                     "type": "0",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_ec9e7c21-d52b-4dd5-aa98-a57d2e338043.mp3?lk3s=da27ec82&x-expires=1761560134&x-signature=T5EIFuLYkekYTsNgeC4PRaqEn3I%3D"
+                    "audio_url": "/voices/3-14-1.mp3"
                 }
             ]
         },
@@ -704,7 +704,7 @@ const bazong = {
                     "text_en": "Alex and I fell in love deeply.",
                     "text_zh": "亚历克斯和我深深地相爱了。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_04de689b-5ddd-488e-9bf9-05735561b2f1.mp3?lk3s=da27ec82&x-expires=1761560136&x-signature=Y%2BnEDu60FRblMx7Iq9O%2BYvAVKto%3D"
+                    "audio_url": "/voices/3-15-1.mp3"
                 }
             ]
         },
@@ -715,7 +715,7 @@ const bazong = {
                     "text_en": "We found that love could make two very different people come together.",
                     "text_zh": "我们发现爱情可以让两个截然不同的人走到一起。",
                     "type": "0",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_92e026b0-44e7-466d-be6e-b20e24bec8a7.mp3?lk3s=da27ec82&x-expires=1761560137&x-signature=Lq6SqwCtWmn9g3XTfmtFUEAd5as%3D"
+                    "audio_url": "/voices/3-16-1.mp3"
                 }
             ]
         },
@@ -726,7 +726,7 @@ const bazong = {
                     "text_en": "It was a happy ending for us, full of love and warmth.",
                     "text_zh": "对我们来说，这是一个充满爱和温暖的幸福结局。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_575184e4-52e9-40d9-9810-01755e554c42.mp3?lk3s=da27ec82&x-expires=1761560139&x-signature=9Fvv5DYbNMdY6%2B1pRwdLGadnflU%3D"
+                    "audio_url": "/voices/3-17-1.mp3"
                 }
             ]
         }
@@ -735,77 +735,77 @@ const bazong = {
         {
             "index": "1",
             "prompt": "女孩莉莉，年轻且充满活力，留着一头柔顺的长发，身着简约而优雅的职业套装，白色衬衫搭配黑色短裙，脚穿一双黑色高跟鞋。她面带自信的微笑，双手自然下垂，站在明亮且布置精致的办公室中央。办公室里摆放着现代化的办公设备，阳光透过窗户洒在她身上。图片输出为现代浪漫小说插画风格，配图文案“I'm Lily, a young and independent girl. 我是莉莉，一个年轻独立的女孩。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/BXPmhXVtIfM/"
+            "img_url": "/images/02.png"
         },
         {
             "index": "2",
             "prompt": "女孩莉莉，留着柔顺长发，穿着白色衬衫搭配黑色短裙和黑色高跟鞋；霸总亚历克斯，有着深邃的眼神，身着一身笔挺的黑色西装，打着蓝色领带。在一场商务会议中，会议室里摆放着长桌和整齐的座椅，墙上挂着艺术画。莉莉面带礼貌的微笑，眼神中带着好奇，亚历克斯神情傲慢，双手抱胸。图片输出为现代浪漫小说插画风格，配图文案“One day, I met an arrogant CEO named Alex in a business meeting. 一天，我在商务会议上遇到了傲慢的CEO亚历克斯。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/cNG4vjEWhfM/"
+            "img_url": "/images/03.png"
         },
         {
             "index": "3",
             "prompt": "女孩莉莉，长发披肩，穿着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，穿着黑色西装、蓝色领带。在商务会议室内，文件和资料散落在桌上。亚历克斯站在桌前，手指着文件，满脸严肃地下命令，莉莉微微皱眉，眼神中有些不满。图片输出为现代浪漫小说插画风格，配图文案“He was so bossy, always giving orders. 'You should do it this way!' he said. 他很专横，总是发号施令。‘你应该这样做！’他说。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/dRzvX2b6OO0/"
+            "img_url": "/images/05.png"
         },
         {
             "index": "4",
             "prompt": "女孩莉莉，留着柔顺长发，身着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，穿着黑色西装、蓝色领带。在办公室里，周围有些杂乱的文件。莉莉双手叉腰，满脸嫌弃，亚历克斯背对着她，一副不在意的样子。图片输出为现代浪漫小说插画风格，配图文案“I thought he was the most annoying man. 我觉得他是最讨厌的人。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/blXnlxmGw7Q/"
+            "img_url": "/images/06.png"
         },
         {
             "index": "5",
             "prompt": "女孩莉莉，长发飘飘，穿着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，身着黑色西装、蓝色领带。在办公室的窗边，阳光洒在他们身上。亚历克斯专注地看着窗外，莉莉偷偷地看着他，脸上泛起红晕，眼神中带着羞涩。图片输出为现代浪漫小说插画风格，配图文案“But there was a mysterious charm about him that I couldn't deny. I had a little crush on him secretly. 但他有一种神秘的魅力，让我无法抗拒。我偷偷地喜欢上了他。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/-YvVz-94uEw/"
+            "img_url": "/images/07.png"
         },
         {
             "index": "6",
             "prompt": "女孩莉莉，留着长发，穿着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，穿着黑色西装、蓝色领带。在办公室里，电脑开着，文件堆在一旁。他们相对而坐，一起看着文件，表情专注，偶尔交流。图片输出为现代浪漫小说插画风格，配图文案“As time went on, we worked together more often. 随着时间推移，我们更常一起工作。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/MaoaB1AyIFQ/"
+            "img_url": "/images/08.png"
         },
         {
             "index": "7",
             "prompt": "女孩莉莉，长发有些凌乱，穿着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，穿着黑色西装、蓝色领带，领带有些歪。在办公室里，文件四处散落，椅子也有些歪。他们站着争吵，脸红脖子粗，双手挥舞。图片输出为现代浪漫小说插画风格，配图文案“Our different ideas often led to chaos. 我们不同的想法常导致混乱。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/0sVMH0XjKLw/"
+            "img_url": "/images/09.png"
         },
         {
             "index": "8",
             "prompt": "女孩莉莉，长发柔顺，穿着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，穿着黑色西装、蓝色领带。在办公室的办公桌前，亚历克斯专注地工作，眼神坚定，莉莉在一旁看着他，眼中满是敬佩。图片输出为现代浪漫小说插画风格，配图文案“But his determination in work impressed me. 但他对工作的决心打动了我。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/7yoVtmGz0Uk/"
+            "img_url": "/images/010.png"
         },
         {
             "index": "9",
             "prompt": "女孩莉莉，长发飞扬，穿着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，穿着黑色西装、蓝色领带。在办公室里，气氛紧张，文件被扔在地上。莉莉愤怒地大喊，手指着亚历克斯，亚历克斯也涨红了脸回应。图片输出为现代浪漫小说插画风格，配图文案“One day, we had a big argument. 'You're too stubborn!' I shouted. 'You need to learn to compromise!' he replied. 一天，我们大吵了一架。‘你太固执了！’我喊道。‘你得学会妥协！’他回应道。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/V3iEfHO8CHk/"
+            "img_url": "/images/011.png"
         },
         {
             "index": "10",
             "prompt": "女孩莉莉，长发垂落，穿着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，穿着黑色西装、蓝色领带。在办公室的角落里，他们面对面，表情缓和，眼神中带着理解。图片输出为现代浪漫小说插画风格，配图文案“However, our sensitivity to each other's feelings made us start to understand one another. 然而，我们对彼此感受的敏感让我们开始理解对方。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/1RZdlXZwnqg/"
+            "img_url": "/images/012.png"
         },
         {
             "index": "11",
             "prompt": "女孩莉莉，长发柔顺，脸上带着微笑，穿着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，穿着黑色西装、蓝色领带，温柔地笑着。在办公室的休息区，他们坐在沙发上，轻松地交谈。图片输出为现代浪漫小说插画风格，配图文案“We began to have playful conversations. 'You're not that bad,' I said with a smile. 'Neither are you,' he answered gently. 我们开始有了俏皮的对话。‘你没那么坏。’我笑着说。‘你也一样。’他温柔地回答。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/FjSfIugkvTY/"
+            "img_url": "/images/013.png"
         },
         {
             "index": "12",
             "prompt": "女孩莉莉，长发随风飘动，穿着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，穿着黑色西装、蓝色领带。在办公室里，一切都收拾整齐，阳光照进来。他们站在一起，双手紧握，脸上洋溢着胜利的喜悦。图片输出为现代浪漫小说插画风格，配图文案“In the end, we overcame all the difficulties. 最后，我们克服了所有困难。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/WtYHVS1w6SU/"
+            "img_url": "/images/014.png"
         },
         {
             "index": "13",
             "prompt": "女孩莉莉，长发环绕在肩，穿着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，穿着黑色西装、蓝色领带。在浪漫的花园中，花朵盛开，蝴蝶飞舞。他们深情相拥，眼神中充满爱意。图片输出为现代浪漫小说插画风格，配图文案“Alex and I fell in love deeply. 亚历克斯和我深深地相爱了。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/t0tuKwMJUmY/"
+            "img_url": "/images/015.png"
         },
         {
             "index": "14",
             "prompt": "女孩莉莉，长发飘飘，穿着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，穿着黑色西装、蓝色领带。在公园的长椅上，绿树成荫，阳光斑驳。他们依偎在一起，看着远方，脸上带着幸福的笑容。图片输出为现代浪漫小说插画风格，配图文案“We found that love could make two very different people come together. 我们发现爱能让两个截然不同的人走到一起。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/zlw5Ur5Xw9I/"
+            "img_url": "/images/016.png"
         },
         {
             "index": "15",
             "prompt": "女孩莉莉，长发柔顺，穿着白色衬衫、黑色短裙和黑色高跟鞋；霸总亚历克斯，穿着黑色西装、蓝色领带。在温馨的客厅里，灯光柔和，布置温馨。他们相拥而坐，眼神中充满爱意和温暖。图片输出为现代浪漫小说插画风格，配图文案“It was a happy ending for us, full of love and warmth. 对我们来说，这是一个充满爱与温暖的幸福结局。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/kryxo6sVaD8/"
+            "img_url": "/images/017.png"
         }
     ],
     "prompt": "【现代浪漫小说插画风格】 of 【年轻独立的女孩Lily，有着青春甜美的外貌，穿着简约时尚的职业装，扎着马尾，脸上洋溢着幸福的笑容；傲慢的CEO Alex，帅气冷峻，身着笔挺的西装，打着精致的领带，嘴角带着温柔的笑意。两人相拥在一起，深情对视，占据画幅的大部分比例】, in 【现代化的办公室场景，明亮的落地窗透进柔和的光线，办公桌上摆放着文件和绿植，背景是繁华的都市景象】, 【明亮温暖的色彩，金色的阳光洒在两人身上，营造出温馨浪漫的氛围】, 【采用特写镜头，聚焦在两人的面部和相拥的动作上】, 【画面细节丰富，人物表情生动，服装质感逼真】, 配图文案: \"故事英文标题 故事中文标题\" in 【画面上方正中央】，精准清晰渲染文字。",
@@ -874,7 +874,7 @@ const bazong = {
     "story_intro": {
         "intro_en": "An arrogant CEO meets a charming girl. Their initial clash turns into a sweet love story with determination and compromise, ending happily.",
         "intro_zh": "一位傲慢的总裁遇见了迷人的女孩。他们最初的冲突因决心和妥协变成甜蜜爱情故事，有个美满结局。",
-        "cover_img": "https://s.coze.cn/t/J--lSTz4yF8/"
+        "cover_img": "/images/01.png"
     },
     "story_title": {
         "title_en": "The Arrogant CEO's Love Conquest",
@@ -909,7 +909,7 @@ const hli = {
                     "text_en": "It was the gloomiest bathroom Harry had ever seen. A cracked mirror hung over chipped sinks, and the damp floor gleamed in the faint candlelight. The paint on the walls was flaking, and cobwebs were floating in the corners.",
                     "text_zh": "这是哈利见过的最阴暗的浴室。一面破裂的镜子挂在有缺口的水槽上方，潮湿的地板在微弱的烛光下闪闪发光。墙壁上的油漆在剥落，角落里飘着蜘蛛网。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_63b7b35d-ff31-48a9-8510-5c6df8be6610.mp3?lk3s=da27ec82&x-expires=1761560655&x-signature=CD8Zwz72wWRiwPhFVleBy8d%2FK7c%3D"
+                    "audio_url": "/voices/1-2-1.mp3"
                 }
             ]
         },
@@ -920,19 +920,19 @@ const hli = {
                     "text_en": "Hermione led Harry and Ron to the last stall.",
                     "text_zh": "赫敏领着哈利和罗恩走向最后一个隔间。",
                     "type": "0",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_21f6dc65-f669-49bf-aa44-22794caa091f.mp3?lk3s=da27ec82&x-expires=1761560656&x-signature=hfin11Iu2DlcktHaVgX%2FZ3jDxLU%3D"
+                    "audio_url": "/voices/1-3-1.mp3"
                 },
                 {
                     "text_en": "\"Hello, Myrtle,\"",
                     "text_zh": "\"你好，桃金娘，\"",
                     "type": "1",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468512265151512603_5addd2f7-b3d7-453d-b360-c33f1789f575.mp3?lk3s=da27ec82&x-expires=1761560657&x-signature=Bjde4vsaXk%2BARZNsq2q3GoMjMOk%3D"
+                    "audio_url": "/voices/1-3-2.mp3"
                 },
                 {
                     "text_en": "she said gently.",
                     "text_zh": "她温柔地说。",
                     "type": "0",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_6644dc69-04a9-41ea-b2e4-15c797ffff5d.mp3?lk3s=da27ec82&x-expires=1761560659&x-signature=e9agAaBjaALEgckGQsFp6Kfr0Fk%3D"
+                    "audio_url": "/voices/1-3-3.mp3"
                 }
             ]
         },
@@ -943,19 +943,19 @@ const hli = {
                     "text_en": "Moaning Myrtle was floating above the toilet tank, prodding her chin and eyeing the boys suspiciously.",
                     "text_zh": "哭泣的桃金娘飘浮在马桶水箱上方，戳着下巴，怀疑地打量着男孩们。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_b8c5509a-2928-404f-82ce-75d731c0ca67.mp3?lk3s=da27ec82&x-expires=1761560660&x-signature=WVsAzxXaDIe2Gp9P9XsdE39wZ2A%3D"
+                    "audio_url": "/voices/1-4-1.mp3"
                 },
                 {
                     "text_en": "\"This is a girls' bathroom,\"",
                     "text_zh": "\"这是女生浴室，\"",
                     "type": "3",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_82a60918-f309-4141-829b-60717265d7eb.mp3?lk3s=da27ec82&x-expires=1761560662&x-signature=6113gf%2BQuinmD1XTncp27hNH4ws%3D"
+                    "audio_url": "/voices/1-4-2.mp3"
                 },
                 {
                     "text_en": "she said.",
                     "text_zh": "她说。",
                     "type": "0",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_fe50e3aa-9c62-43aa-a6c6-eca9283a27b5.mp3?lk3s=da27ec82&x-expires=1761560663&x-signature=ojbopYSYtiJkWqtxF8e3X4hHnR4%3D"
+                    "audio_url": "/voices/1-4-3.mp3"
                 }
             ]
         },
@@ -966,13 +966,13 @@ const hli = {
                     "text_en": "\"We just wanted to show them how... nice it is in here,\"",
                     "text_zh": "\"我们只是想让他们看看这里有多……好，\"",
                     "type": "1",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468512265151512603_76c46724-8f70-408d-8bae-e0999fb641ee.mp3?lk3s=da27ec82&x-expires=1761560664&x-signature=SHNfoMea3XbsCTq6xrXn0qrxo0M%3D"
+                    "audio_url": "/voices/1-5-1.mp3"
                 },
                 {
                     "text_en": "Hermione said weakly, gesturing at their dismal surroundings.",
                     "text_zh": "赫敏虚弱地说，同时指了指周围凄凉的环境。",
                     "type": "0",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_8370d3e8-2cf6-4b36-b090-110fdfd10672.mp3?lk3s=da27ec82&x-expires=1761560665&x-signature=IgiWXWq%2BCF8nm0lbnskl9POFiP4%3D"
+                    "audio_url": "/voices/1-5-2.mp3"
                 }
             ]
         },
@@ -983,13 +983,13 @@ const hli = {
                     "text_en": "Harry whispered to Hermione,",
                     "text_zh": "哈利小声对赫敏说，",
                     "type": "0",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_a51e63d9-8fcd-41a7-80f8-1e80bc1d6959.mp3?lk3s=da27ec82&x-expires=1761560666&x-signature=njOxIG1rPvEl3h%2FcVRBV0L1HDdc%3D"
+                    "audio_url": "/voices/1-6-1.mp3"
                 },
                 {
                     "text_en": "\"Ask if she saw anything.\"",
                     "text_zh": "\"问问她有没有看到什么。\"",
                     "type": "2",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7481299960424742966_30641431-82dd-467f-9441-999e2e1088ca.mp3?lk3s=da27ec82&x-expires=1761560667&x-signature=foDIHmzA2hJKoFA3j1NbPLL4dsI%3D"
+                    "audio_url": "/voices/1-6-2.mp3"
                 }
             ]
         },
@@ -1000,19 +1000,19 @@ const hli = {
                     "text_en": "\"People always talk behind my back!\"",
                     "text_zh": "\"人们总是在我背后议论纷纷！\"",
                     "type": "3",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_10b19ba1-a06a-4905-992d-156e23fa9d4b.mp3?lk3s=da27ec82&x-expires=1761560668&x-signature=iHqL338%2BwHnvwXJaZmc03vlIGQs%3D"
+                    "audio_url": "/voices/1-7-1.mp3"
                 },
                 {
                     "text_en": "Myrtle wailed.",
                     "text_zh": "桃金娘哀号道。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_a1c144ac-fa29-4018-94e1-a6a86aaee191.mp3?lk3s=da27ec82&x-expires=1761560670&x-signature=Kw%2BzKfOF41qz2bhODDIRYVQVv0c%3D"
+                    "audio_url": "/voices/1-7-2.mp3"
                 },
                 {
                     "text_en": "\"I have feelings, even though I'm dead.\"",
                     "text_zh": "\"即使我死了，我也是有感情的。\"",
                     "type": "3",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_8ecfc59d-5d82-4566-aaf4-106335835bf4.mp3?lk3s=da27ec82&x-expires=1761560671&x-signature=t6lXdJoKYo2RcFBL6xCq9i%2B0Tdo%3D"
+                    "audio_url": "/voices/1-7-3.mp3"
                 }
             ]
         },
@@ -1023,19 +1023,19 @@ const hli = {
                     "text_en": "\"Have you seen anything unusual?\"",
                     "text_zh": "\"你有没有看到什么不寻常的事情？\"",
                     "type": "1",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468512265151512603_1176d239-f5bc-4875-9f62-829379d4e089.mp3?lk3s=da27ec82&x-expires=1761560672&x-signature=6WaW5nhIsBx%2BF%2FxaOfilY4aUTfU%3D"
+                    "audio_url": "/voices/1-8-1.mp3"
                 },
                 {
                     "text_en": "Hermione pressed.",
                     "text_zh": "赫敏追问。",
                     "type": "0",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_23112d15-fa1a-45dc-8b5c-7ce46e461f4c.mp3?lk3s=da27ec82&x-expires=1761560673&x-signature=Kc1QgwpWsGC%2BgP1vYr7v1T79sKE%3D"
+                    "audio_url": "/voices/1-8-2.mp3"
                 },
                 {
                     "text_en": "\"A cat was attacked outside on Halloween.\"",
                     "text_zh": "\"万圣节那天外面有只猫被袭击了。\"",
                     "type": "1",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468512265151512603_df308201-d8b4-4fff-b7e7-87ec01483dbc.mp3?lk3s=da27ec82&x-expires=1761560675&x-signature=QWGrR01kFBz6jRpXvdvHpsHQ09I%3D"
+                    "audio_url": "/voices/1-8-3.mp3"
                 }
             ]
         },
@@ -1046,13 +1046,13 @@ const hli = {
                     "text_en": "\"Was anyone here that night?\"",
                     "text_zh": "\"那天晚上有人在这里吗？\"",
                     "type": "2",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7481299960424742966_62536893-64b0-42c9-b950-93727afac726.mp3?lk3s=da27ec82&x-expires=1761560675&x-signature=PmWlX8l44D1P2ttRSif5Ob5jVwo%3D"
+                    "audio_url": "/voices/1-9-1.mp3"
                 },
                 {
                     "text_en": "Harry asked.",
                     "text_zh": "哈利问道。",
                     "type": "0",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_e1cfb747-e5f4-4f6d-a64c-fda8e1ab2c00.mp3?lk3s=da27ec82&x-expires=1761560677&x-signature=8wH9gJ6kdq8KsNljESU%2BBqR85P4%3D"
+                    "audio_url": "/voices/1-9-2.mp3"
                 }
             ]
         },
@@ -1063,19 +1063,19 @@ const hli = {
                     "text_en": "\"I wasn't paying attention,\"",
                     "text_zh": "\"我当时没注意，\"",
                     "type": "3",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_cd19d71f-e2f5-4bd9-9a55-4e276577277e.mp3?lk3s=da27ec82&x-expires=1761560678&x-signature=aft%2B3NzMXwSf2B3%2FZ%2F8j8bJA09c%3D"
+                    "audio_url": "/voices/1-10-1.mp3"
                 },
                 {
                     "text_en": "Myrtle said dramatically.",
                     "text_zh": "桃金娘夸张地说。",
                     "type": "0",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_9e48736e-2f0a-41c7-b204-cdfe5bc1a555.mp3?lk3s=da27ec82&x-expires=1761560679&x-signature=aTVQL0t3Ik%2Fdxeua4ZrRs%2BzHfIY%3D"
+                    "audio_url": "/voices/1-10-2.mp3"
                 },
                 {
                     "text_en": "\"Peeves upset me so much I came here to kill myself—then I remembered I'm already—\"",
                     "text_zh": "\"皮皮鬼把我气得要命，我来这里想自杀——然后我才想起我已经——\"",
                     "type": "3",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426725529589661723_41a49fae-089f-49ef-9e81-3dfcfac1763a.mp3?lk3s=da27ec82&x-expires=1761560681&x-signature=kvc0WWVrL85cJcZeBA7G5iGPjLw%3D"
+                    "audio_url": "/voices/1-10-3.mp3"
                 }
             ]
         },
@@ -1086,13 +1086,13 @@ const hli = {
                     "text_en": "\"Dead,\"",
                     "text_zh": "\"死了，\"",
                     "type": "2",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7481299960424742966_eefb76a4-ca9b-4a7d-a33a-8f643adfa7ea.mp3?lk3s=da27ec82&x-expires=1761560682&x-signature=7C0D9zdpmkXZvX3uKlrGkug07l8%3D"
+                    "audio_url": "/voices/1-11-1.mp3"
                 },
                 {
                     "text_en": "Ron finished helpfully.",
                     "text_zh": "罗恩好心地接话道。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_cf31f36d-d2bf-4423-9640-65b228b0c499.mp3?lk3s=da27ec82&x-expires=1761560683&x-signature=SBmy32k%2FptabCz6su2QNjHL8frc%3D"
+                    "audio_url": "/voices/1-11-2.mp3"
                 }
             ]
         },
@@ -1103,7 +1103,7 @@ const hli = {
                     "text_en": "With a tragic sob, Myrtle flipped upside - down and plunged into the toilet, splashing water everywhere before disappearing down the pipes.",
                     "text_zh": "桃金娘悲痛地抽泣着，翻了个跟头，头朝下扎进了马桶，溅得四处都是水，然后消失在管道里。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_86654795-ab58-4f4d-a794-1e46ba45c56b.mp3?lk3s=da27ec82&x-expires=1761560685&x-signature=e6qkxP6sTA3%2Ba%2BVEtgyeyHtsY8M%3D"
+                    "audio_url": "/voices/1-12-1.mp3"
                 }
             ]
         },
@@ -1114,7 +1114,7 @@ const hli = {
                     "text_en": "Her muffled cries echoed from the U - bend.",
                     "text_zh": "她低沉的哭声从U形弯管里传了出来。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_d8cb5870-b28a-4ecc-89d2-a7403c271733.mp3?lk3s=da27ec82&x-expires=1761560686&x-signature=EgFa9UVXzDLwvoDTXZw5Jd1Qp8o%3D"
+                    "audio_url": "/voices/1-133.mp3"
                 }
             ]
         },
@@ -1125,13 +1125,13 @@ const hli = {
                     "text_en": "As Harry and Ron stared, Hermione shrugged.",
                     "text_zh": "哈利和罗恩盯着看时，赫敏耸了耸肩。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_1ec0f438-898f-4d8b-8ccc-28e312a5c922.mp3?lk3s=da27ec82&x-expires=1761560687&x-signature=Eyt37ICyJi8%2FiFqClAJNBrIUNiQ%3D"
+                    "audio_url": "/voices/1-13-1.mp3"
                 },
                 {
                     "text_en": "\"Honestly, that was quite cheerful for Myrtle. Let's go.\"",
                     "text_zh": "\"说实话，桃金娘这样算很开心了。我们走吧。\"",
                     "type": "1",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468512265151512603_c99bb538-ab6f-4728-8748-ba0bc5c8383e.mp3?lk3s=da27ec82&x-expires=1761560689&x-signature=MrXteb7Gyu0E51bAnpcu8fThM5g%3D"
+                    "audio_url": "/voices/1-14-2.mp3"
                 }
             ]
         },
@@ -1142,7 +1142,7 @@ const hli = {
                     "text_en": "They left the gloomy bathroom, still wondering about the mystery of the attacked cat.",
                     "text_zh": "他们离开了阴暗的浴室，心里还在琢磨着被袭击的猫的谜团。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_ca40ad93-1f40-4b88-ae80-81e0dee5cd7e.mp3?lk3s=da27ec82&x-expires=1761560690&x-signature=fHf%2BoEIooGPNhm%2FH1KyI7qQMLUA%3D"
+                    "audio_url": "/voices/1-15-1.mp3"
                 }
             ]
         }
@@ -1151,42 +1151,42 @@ const hli = {
         {
             "index": "1",
             "prompt": "哈利，人类，身着霍格沃茨校服，表情好奇地站着。场景是哈利见过最阴暗的浴室，有破裂的镜子挂在有缺口的水槽上方，潮湿的地板在微弱烛光下闪烁，墙壁上的油漆剥落，角落里飘着蜘蛛网。图片输出为哈利波特经典风格。",
-            "img_url": "https://s.coze.cn/t/9W-7cXM98Fg/"
+            "img_url": "/images/1-2.png"
         },
         {
             "index": "2",
             "prompt": "赫敏、哈利和罗恩，均为人类，穿着霍格沃茨校服。赫敏表情温和，领着哈利和罗恩走向最后一个隔间，温柔地说着“Hello, Myrtle 你好，桃金娘”。场景是阴暗的浴室，有破裂镜子、缺口水槽等。图片输出为哈利波特经典风格。配图文案“Hello, Myrtle 你好，桃金娘”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/7SFheT0GbWc/"
+            "img_url": "/images/1-3.png"
         },
         {
             "index": "3",
             "prompt": "赫敏、哈利、罗恩和桃金娘，前三者为人类，桃金娘是幽灵。他们都穿着霍格沃茨校服，桃金娘透明虚幻。桃金娘漂浮在马桶水箱上方，戳着下巴，怀疑地打量着男孩们，说着“This is a girls' bathroom 这是女生浴室”。场景是阴暗浴室。图片输出为哈利波特经典风格。配图文案“This is a girls' bathroom 这是女生浴室”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/Ori7ZP6M3NI/"
+            "img_url": "/images/1-4.png"
         },
         {
             "index": "4",
             "prompt": "赫敏、哈利和罗恩，人类，穿霍格沃茨校服。赫敏表情虚弱，指着周围糟糕的环境，说着“We just wanted to show them how... nice it is in here 我们只是想让他们看看这里有多……好”。场景是阴暗浴室。图片输出为哈利波特经典风格。配图文案“We just wanted to show them how... nice it is in here 我们只是想让他们看看这里有多……好”，高质量渲染文字，调整文字排版适应图片，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/gs5Bx0Mwl_k/"
+            "img_url": "/images/1-5.png"
         },
         {
             "index": "5",
             "prompt": "哈利和赫敏，人类，穿霍格沃茨校服。哈利表情急切，凑到赫敏耳边低语“Ask if she saw anything 问问她有没有看到什么”。场景是阴暗浴室。图片输出为哈利波特经典风格。配图文案“Ask if she saw anything 问问她有没有看到什么”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/nzGXvhBKRgU/"
+            "img_url": "/images/1-6.png"
         },
         {
             "index": "6",
             "prompt": "桃金娘，幽灵，透明虚幻。她伤心地大哭，喊着“People always talk behind my back! I have feelings, even though I'm dead 人们总是在我背后议论！即使我死了，我也是有感情的”。场景是阴暗浴室。图片输出为哈利波特经典风格。配图文案“People always talk behind my back! I have feelings, even though I'm dead 人们总是在我背后议论！即使我死了，我也是有感情的”，高质量渲染文字，调整文字排版适应图片，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/sv2-BGcKP4s/"
+            "img_url": "/images/1-7.png"
         },
         {
             "index": "7",
             "prompt": "赫敏，人类，穿霍格沃茨校服。她表情严肃，追问“Have you seen anything unusual? A cat was attacked outside on Halloween 你有没有看到什么不寻常的事？万圣节那天外面有只猫被袭击了”。场景是阴暗浴室。图片输出为哈利波特经典风格。配图文案“Have you seen anything unusual? A cat was attacked outside on Halloween 你有没有看到什么不寻常的事？万圣节那天外面有只猫被袭击了”，高质量渲染文字，调整文字排版适应图片，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/Dde9Ui5xNWA/"
+            "img_url": "/images/1-8.png"
         },
         {
             "index": "8",
             "prompt": "哈利，人类，穿霍格沃茨校服。他一脸期待地问“Was anyone here that night? 那天晚上有人在这里吗？”。场景是阴暗浴室。图片输出为哈利波特经典风格。配图文案“Was anyone here that night? 那天晚上有人在这里吗？”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/OKdv--X_Bew/"
+            "img_url": "/images/1-9.png"
         },
         {
             "index": "9",
@@ -1196,27 +1196,27 @@ const hli = {
         {
             "index": "10",
             "prompt": "罗恩，人类，穿霍格沃茨校服。他热心地接上话“Dead 死了”。场景是阴暗浴室。图片输出为哈利波特经典风格。配图文案“Dead 死了”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/IuftXHWpfEM/"
+            "img_url": "/images/1-11.png"
         },
         {
             "index": "11",
             "prompt": "桃金娘，幽灵，透明虚幻。她悲伤地抽泣着，倒着扎进马桶，溅起水花后消失在管道里。场景是阴暗浴室。图片输出为哈利波特经典风格。",
-            "img_url": "https://s.coze.cn/t/WPeU0z80x44/"
+            "img_url": "/images/1-12.png"
         },
         {
             "index": "12",
             "prompt": "场景是阴暗浴室，桃金娘低沉的哭声从U型弯管传来。图片输出为哈利波特经典风格。",
-            "img_url": "https://s.coze.cn/t/x0YraNrSWXE/"
+            "img_url": "/images/1-13.png"
         },
         {
             "index": "13",
             "prompt": "赫敏、哈利和罗恩，人类，穿霍格沃茨校服。哈利和罗恩发呆，赫敏耸耸肩，说着“Honestly, that was quite cheerful for Myrtle. Let's go 说实话，对桃金娘来说这已经算挺开心的了。我们走吧”。场景是阴暗浴室。图片输出为哈利波特经典风格。配图文案“Honestly, that was quite cheerful for Myrtle. Let's go 说实话，对桃金娘来说这已经算挺开心的了。我们走吧”，高质量渲染文字，调整文字排版适应图片，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/a-RwLldviB4/"
+            "img_url": "/images/1-14.png"
         },
         {
             "index": "14",
             "prompt": "赫敏、哈利和罗恩，人类，穿霍格沃茨校服。他们带着疑惑的表情离开阴暗浴室。场景是浴室门口。图片输出为哈利波特经典风格。",
-            "img_url": "https://s.coze.cn/t/zY6Mvh8N1io/"
+            "img_url": "/images/1-15.png"
         }
     ],
     "prompt": "### 关键视觉元素提炼\n- **主角肖像**：\n    - 哈利·波特：人类，黑色头发、绿色眼睛，穿着霍格沃茨校服，年龄15岁左右，标志性特征是额头上的闪电形伤疤。\n    - 赫敏·格兰杰：人类，棕色卷发，褐色眼睛，身着霍格沃茨校服，15岁，聪慧好学的气质。\n    - 罗恩·韦斯莱：人类，红色头发、蓝色眼睛，穿着霍格沃茨校服，15岁，脸上有雀斑。\n    - 哭泣的桃金娘：幽灵，透明的身体，长发，穿着旧时的女生校服，年龄大约是死亡时的年纪，漂浮状态，表情哀怨。\n- **决定性瞬间**：哭泣的桃金娘倒着扎进马桶，溅起水花，哈利和罗恩惊讶地盯着，赫敏无奈耸肩。\n- **世界构建**：故事发生在霍格沃茨城堡内最阴暗的女生盥洗室，时代背景是魔法世界的现代，建筑为古老的城堡风格，关键物品有破裂的镜子、有缺口的水槽、摇曳的蜡烛、破旧的隔档门、马桶。\n- **情感色调**：故事整体氛围幽暗、神秘，色彩以深色调为主，如深褐色、黑色、深蓝色，光影昏暗，只有微弱的烛光。\n- **风格透镜**：根据“哈利波特经典风格”，对应的艺术流派为奇幻写实风。\n- **配图文字**：由于未提供故事中英文标题，假设英文标题为 “The Mystery in the Girls' Bathroom”，中文标题为 “女生盥洗室的谜团”。\n\n### 生成提示词\n【奇幻写实风】 of 【哈利·波特身着霍格沃茨校服，黑色头发，额头上有闪电伤疤，惊讶地盯着马桶，占画幅1/4；赫敏·格兰杰穿着霍格沃茨校服，棕色卷发，无奈地耸耸肩，占画幅1/4；罗恩·韦斯莱身着校服，红色头发有雀斑，同样惊讶地看着，占画幅1/4；哭泣的桃金娘透明身体，长发，哀怨地倒着扎进马桶溅起水花，占画幅1/4】, in 【霍格沃茨城堡内阴暗的女生盥洗室，有破裂的镜子挂在有缺口的水槽上方，潮湿的地面在微弱烛光下闪烁，墙壁上的漆在剥落，角落里飘着蜘蛛网，破旧的隔档门有划痕和剥落的漆，一个隔档门歪挂在铰链上，还有一个马桶】, 【深褐色、黑色、深蓝色为主的深色调，昏暗的光影，只有微弱的烛光】, 【全景构图，展现整个盥洗室场景和人物】, 【细节丰富，如蜡烛的火焰、溅起的水花、剥落的墙皮等】, 配图文案: \"The Mystery in the Girls' Bathroom 女生盥洗室的谜团\" in 【画面顶部居中】，精准清晰渲染文字。 ",
