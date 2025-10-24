@@ -68,27 +68,27 @@ const aisha = {
         {
             "index": "1",
             "prompt": "冰雪女王艾莎，身着蓝色冰雪长袍，头戴冰晶王冠，面带微笑，伸出双手。一只长颈鹿和一只大象，长颈鹿脖子修长，大象体型庞大，它们都好奇地看着艾莎。场景是一片被冰雪覆盖的森林，树木上挂着晶莹的冰柱，地上铺满了洁白的雪。图片风格为魔法梦幻风。配图文案“Hello! 你好！”，中英换行，高质量渲染文字，文案位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/jX1Sf7PwyVE/"
+            "img_url": "/images/ggs2.png"
         },
         {
             "index": "2",
             "prompt": "冰雪女王艾莎，蓝色冰雪长袍，冰晶王冠，站在一旁微笑着。短鼻子大象兴奋地甩着鼻子，高个子长颈鹿伸长脖子，它们都跃跃欲试，想要玩耍。场景依旧是冰雪森林，阳光透过树枝洒在雪地上。图片风格为魔法梦幻风。配图文案“The short elephant and the tall giraffe want to play. 矮大象和高长颈鹿想玩耍。”，中英换行，高质量渲染文字，文案位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/hfLnH4BfBfk/"
+            "img_url": "/images/故事二3图.png"
         },
         {
             "index": "3",
             "prompt": "冰雪女王艾莎，蓝色长袍，王冠，脸上洋溢着兴奋的神情。长颈鹿和大象都睁大眼睛，咧着嘴，兴奋地蹦跳着。场景是冰雪森林的一片开阔地，周围的冰雪在阳光照耀下闪烁光芒。图片风格为魔法梦幻风。配图文案“They feel excited. 它们感到兴奋。”，中英换行，高质量渲染文字，文案位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/FxwjYFLLjZQ/"
+            "img_url": "/images/故事二4图.png"
         },
         {
             "index": "4",
             "prompt": "冰雪女王艾莎，蓝色冰雪长袍和王冠，停下动作，专注地用手指清理雪。长颈鹿和大象也停下，用鼻子和脚清理雪。场景是森林中一处雪较厚的地方，雪花还在轻轻飘落。图片风格为魔法梦幻风。配图文案“But they stop to clean the snow with their finger and stamp. 但他们停下来用手指和脚清理雪。”，中英换行，高质量渲染文字，文案位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/BudiQk_0S5U/"
+            "img_url": "/images/故事二5图.png"
         },
         {
             "index": "5",
             "prompt": "冰雪女王艾莎，蓝色长袍和王冠，开心地笑着，张开双臂。长颈鹿和大象都欢快地围绕着艾莎。场景是冰雪森林中，天空中出现了绚丽的彩虹。图片风格为魔法梦幻风。配图文案“Everyone is happy in the end. 最后每个人都很开心。”，中英换行，高质量渲染文字，文案位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/SRWDUZalrg0/"
+            "img_url": "/images/ggs6.png"
         }
     ],
     "prompt": "【童话风格】 of 【冰雪女王艾莎身着蓝色冰雪长裙，头戴冰晶王冠，有着白皙的皮肤和金色的长发，面带微笑，伸出双手与一只短鼻子大象和一只长脖子长颈鹿互动，艾莎占据画幅比例30%，大象占据画幅比例30%，长颈鹿占据画幅比例30%】, in 【一片洁白的冰雪世界，地面覆盖着厚厚的积雪，周围有一些冰雕】, 【明亮、欢快的色彩，暖黄色的阳光洒在雪地上】, 【全景构图】, 【画面细节丰富，雪的质感细腻，动物的毛发清晰可见】, 配图文案: \"Hello! Elsa meets a giraffe and an elephant. 你好！艾莎遇见了一只长颈鹿和一头大象。\" in 【画面底部居中，艺术字体】，精准清晰渲染文字。 ",
@@ -117,7 +117,7 @@ const aisha = {
     "story_intro": {
         "intro_en": "Elsa meets a giraffe and an elephant in the snow. They have an adventure and clean up together, ending with friendship.",
         "intro_zh": "艾莎在雪地里遇到长颈鹿和大象，一起冒险、打扫，最后收获友谊。",
-        "cover_img": "https://s.coze.cn/t/xD7NJ-hBEW4/"
+        "cover_img": "/images/gs2fm.png"
     },
     "story_title": {
         "title_en": "Elsa and Her Animal Friends",
@@ -136,7 +136,7 @@ const woman = {
                     "text_en": "A woman wakes up to find herself in a nightmare.",
                     "text_zh": "一名女子醒来，发现自己身处噩梦之中。",
                     "type": "0",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_2e876a46-6e5d-473f-9f13-f336575b1f7e.mp3?lk3s=da27ec82&x-expires=1761558380&x-signature=ELHeakqAmQds3fyGaL%2B1dn9fysY%3D"
+                    "audio_url": "/voices/speech_7468518846874533939_2e876a46-6e5d-473f-9f13-f336575b1f7e.mp3"
                 }
             ]
         },
@@ -147,7 +147,7 @@ const woman = {
                     "text_en": "Her mouth is bound, and her hands are tied.",
                     "text_zh": "她的嘴被绑住，双手也被捆住。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_cad73fa2-b4eb-4c83-a915-661c65a69971.mp3?lk3s=da27ec82&x-expires=1761558381&x-signature=aOXKMxGVjHikG8eP5M5k4i17m7Q%3D"
+                    "audio_url": "/voices/speech_7468518846874533939_cad73fa2-b4eb-4c83-a915-661c65a69971.mp3"
                 }
             ]
         },
@@ -158,7 +158,7 @@ const woman = {
                     "text_en": "She is trapped in the middle of a huge blaze.",
                     "text_zh": "她被困在一场大火的中央。",
                     "type": "0",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_2124ae4a-fe0b-4668-a161-a9e29df9b1ed.mp3?lk3s=da27ec82&x-expires=1761558382&x-signature=JB7hYpbe1%2F942szwPenTfgdkWF0%3D"
+                    "audio_url": "/voices/speech_7468518846874533939_2124ae4a-fe0b-4668-a161-a9e29df9b1ed.mp3"
                 }
             ]
         },
@@ -169,7 +169,7 @@ const woman = {
                     "text_en": "The smoky air surrounds her, and the heat is growing stronger.",
                     "text_zh": "烟雾弥漫的空气包围着她，热度越来越高。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_51b2cd79-a344-426a-9d8f-10c3c74d6e7a.mp3?lk3s=da27ec82&x-expires=1761558383&x-signature=KjS3sOIuqXpgq0JJGc3%2FPPbyyV4%3D"
+                    "audio_url": "/voices/smoke.mp3"
                 }
             ]
         },
@@ -180,7 +180,7 @@ const woman = {
                     "text_en": "Panic seizes her, and she starts to struggle frantically.",
                     "text_zh": "她陷入恐慌，开始疯狂挣扎。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_a1823dc3-b602-4925-a69a-7a060d0a647f.mp3?lk3s=da27ec82&x-expires=1761558385&x-signature=Km8jT9X47csp%2Fx70TZv0H%2F48v5g%3D"
+                    "audio_url": "/voices/ffffg.mp3"
                 }
             ]
         },
@@ -191,7 +191,7 @@ const woman = {
                     "text_en": "She wonders how this situation came to be.",
                     "text_zh": "她想知道这种情况是如何发生的。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_6d53b757-c973-4090-ab49-78537617dad3.mp3?lk3s=da27ec82&x-expires=1761558386&x-signature=%2FbI4FBh%2FcOAUq5b86oMM4Y1XU%2Bw%3D"
+                    "audio_url": "/voices/aaacc.mp3"
                 }
             ]
         },
@@ -202,7 +202,7 @@ const woman = {
                     "text_en": "Just then, she hears two men talking nearby.",
                     "text_zh": "就在这时，她听到附近有两个男人在交谈。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_bf778037-5f7a-40f1-86b2-3054b4dc9e03.mp3?lk3s=da27ec82&x-expires=1761558387&x-signature=820HXUYi7eSPecdi2RUFolBzPpc%3D"
+                    "audio_url": "/voices/hhh.mp3"
                 }
             ]
         },
@@ -219,13 +219,13 @@ const woman = {
                     "text_en": "We can't let her go. She knows too much",
                     "text_zh": "我们不能放她走。她知道得太多了",
                     "type": "4",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426720361753952293_ca1ad300-59f1-47b4-8ac8-8a6ad42a6f9b.mp3?lk3s=da27ec82&x-expires=1761558388&x-signature=hiu241lqx5%2BmflvJ5yYucrxyZ94%3D"
+                    "audio_url": "/voices/aa1.mp3"
                 },
                 {
                     "text_en": "', one man says.",
                     "text_zh": "', 一个男人说。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_609197a3-8f19-4016-a77c-3420602c0dba.mp3?lk3s=da27ec82&x-expires=1761558389&x-signature=pM1%2BCFAqGosN9CmhsWf8A3OStkU%3D"
+                    "audio_url": "/voices/aa2.mp3"
                 }
             ]
         },
@@ -242,13 +242,13 @@ const woman = {
                     "text_en": "But this is too dangerous. What if someone finds out?",
                     "text_zh": "但这太危险了。要是有人发现了怎么办？",
                     "type": "4",
-                    "audio_url": "https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7426720361753952293_dcadd139-7ed5-493a-8a6a-ace365135e09.mp3?lk3s=da27ec82&x-expires=1761558391&x-signature=aCOxN9qzDB6AAezgCLBHHVIePW8%3D"
+                    "audio_url": "/voices/bb1.mp3"
                 },
                 {
                     "text_en": "' the other replies.",
                     "text_zh": "' 另一个人回答道。",
                     "type": "0",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_52431451-e55b-4bf9-a4b1-80691316e1d3.mp3?lk3s=da27ec82&x-expires=1761558392&x-signature=59zpSAlLhfYAT0DNwahDEJP6qqw%3D"
+                    "audio_url": "/voices/bb2.mp3"
                 }
             ]
         },
@@ -259,7 +259,7 @@ const woman = {
                     "text_en": "The woman realizes that she has stumbled upon a dangerous secret.",
                     "text_zh": "这名女子意识到自己偶然发现了一个危险的秘密。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_4595bbc9-53fc-42c1-8416-a639c4ee09ca.mp3?lk3s=da27ec82&x-expires=1761558394&x-signature=MPsF156ErQt0RZhFFpcUG%2BjM2cU%3D"
+                    "audio_url": "/voices/d1.mp3"
                 }
             ]
         },
@@ -270,7 +270,7 @@ const woman = {
                     "text_en": "With the fire getting closer, she must think fast.",
                     "text_zh": "随着火势越来越近，她必须迅速思考。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_e905a78e-0739-4cfe-82d7-096c90ff2619.mp3?lk3s=da27ec82&x-expires=1761558395&x-signature=pmGyq0GBWfTmF1VzHqfTbZSFaqk%3D"
+                    "audio_url": "/voices/c4.mp3"
                 }
             ]
         },
@@ -281,7 +281,7 @@ const woman = {
                     "text_en": "She manages to loosen the ropes bit by bit.",
                     "text_zh": "她设法一点一点地松开了绳子。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_93b1efcf-5088-44f3-9571-1b0edab24299.mp3?lk3s=da27ec82&x-expires=1761558396&x-signature=cCZ1ukeGrc8fURqEzlcDMlAaXCg%3D"
+                    "audio_url": "/voices/h2.mp3"
                 }
             ]
         },
@@ -292,7 +292,7 @@ const woman = {
                     "text_en": "As she breaks free, she rushes towards the two men.",
                     "text_zh": "她挣脱束缚后，朝着那两个男人冲去。",
                     "type": "0",
-                    "audio_url": "https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_5914a66c-1b05-484b-afa8-81ead0620606.mp3?lk3s=da27ec82&x-expires=1761558397&x-signature=6h%2FSyRYHdgGcBK5p46xLjVGYRpU%3D"
+                    "audio_url": "/voices/p4.mp3"
                 }
             ]
         },
@@ -303,7 +303,7 @@ const woman = {
                     "text_en": "They are shocked by her sudden appearance.",
                     "text_zh": "他们被她的突然出现吓了一跳。",
                     "type": "0",
-                    "audio_url": "https://lf6-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_98654465-d834-4f81-aa2a-263bf16f4260.mp3?lk3s=da27ec82&x-expires=1761558398&x-signature=Kg4KZkpwYarX%2FTjiU7KuU0TwGvM%3D"
+                    "audio_url": "/voices/j4.mp3"
                 }
             ]
         },
@@ -314,7 +314,7 @@ const woman = {
                     "text_en": "In the chaos, she grabs a stick and uses it to fight them off. Finally, she escapes from the blaze and runs to the police. The mystery is solved, and justice is served.",
                     "text_zh": "在混乱中，她抓起一根棍子来击退他们。最后，她逃离了大火，跑向了警察局。谜团解开了，正义得到了伸张。",
                     "type": "0",
-                    "audio_url": "https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/VolcanoUserVoice/speech_7468518846874533939_410078b8-f164-4c1e-9bae-cbb7a47a8104.mp3?lk3s=da27ec82&x-expires=1761558401&x-signature=oV3vju3Gp6kMxps9%2Bk1wj1Uq6yE%3D"
+                    "audio_url": "/voices/end1.mp3"
                 }
             ]
         }
@@ -323,77 +323,77 @@ const woman = {
         {
             "index": "1",
             "prompt": "女人，人类，穿着一件淡蓝色连衣裙，头发凌乱。她双眼圆睁，满脸惊恐地从地上猛地坐起。四周是黑暗的环境，弥漫着诡异的气息。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“A woman wakes up to find herself in a nightmare. 一个女人醒来，发现自己正陷入一场噩梦。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/jIGU1jEMZZw/"
+            "img_url": "/images/bluedd.png"
         },
         {
             "index": "2",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她嘴巴被黑色布条绑住，双手被粗麻绳捆在身前，身体微微颤抖，眼神充满恐惧。周围环境昏暗，有一些模糊的阴影。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“Her mouth is bound, and her hands are tied. 她的嘴巴被绑住，双手被捆住。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/A4Lg3PTOuVo/"
+            "img_url": "/images/aaaa.png"
         },
         {
             "index": "3",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她被困在熊熊燃烧的巨大篝火中央，火焰冲天，火星四溅。她身体蜷缩，脸上满是绝望和痛苦。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“She is trapped in the middle of a huge blaze. 她被困在一座巨大的篝火中。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/zIHvoQ11mLU/"
+            "img_url": "/images/ffff.png"
         },
         {
             "index": "4",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她被浓烟环绕，呛得咳嗽，脸上汗水和烟灰混合。火焰逼近，热气扑面而来，她眼神中透露出极度的恐惧。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“The smoky air surrounds her, and the heat is growing stronger. 浓烟包围着她，热气越来越强烈。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/7uf57mnQ-EM/"
+            "img_url": "/images/smoke.png"
         },
         {
             "index": "5",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她身体疯狂扭动，双脚乱蹬，试图挣脱束缚，脸上写满了惊恐和慌乱。周围火焰和浓烟不断翻滚。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“Panic seizes her, and she starts to struggle frantically. 恐慌笼罩着她，她开始疯狂挣扎。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/MVJQfcR0i_c/"
+            "img_url": "/images/run.png"
         },
         {
             "index": "6",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她停止挣扎，眼神迷茫又困惑，眉头紧皱，似乎在努力思考。周围火焰依旧燃烧，浓烟弥漫。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“She wonders how this situation came to be. 她想知道事情是怎么变成这样的。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/UnL7OCXhtDo/"
+            "img_url": "/images/ggdd.png"
         },
         {
             "index": "7",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她侧耳倾听，眼睛微微睁大，脸上露出紧张和好奇的神情。旁边不远处有两个男人的模糊身影。周围火焰燃烧，浓烟飘动。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“Just then, she hears two men talking nearby. 就在这时，她听到附近有两个男人在说话。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/jHsi8oml0m4/"
+            "img_url": "/images/gggss.png"
         },
         {
             "index": "8",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她表情专注地听着，眼睛盯着不远处的两个男人。两个男人站在一旁交谈，其中一个表情凶狠。周围火焰熊熊，浓烟滚滚。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“We can't let her go. She knows too much. 我们不能放她走。她知道得太多了。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/98wBo4WcQ2E/"
+            "img_url": "/images/ff3.png"
         },
         {
             "index": "9",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她继续倾听，眼神中透露出一丝惊讶。另一个男人皱着眉头，脸上带着担忧。周围火焰和浓烟形成动态的背景。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“But this is too dangerous. What if someone finds out? 但这太危险了。要是有人发现了怎么办？”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/xsiN5cnIfSY/"
+            "img_url": "/images/bb3.png"
         },
         {
             "index": "10",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她突然恍然大悟，眼神变得坚定，脸上露出震惊和果断的神情。两个男人还在交谈。周围火焰和浓烟环绕。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“The woman realizes that she has stumbled upon a dangerous secret. 女人意识到自己偶然发现了一个危险的秘密。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/znhRuS9t39A/"
+            "img_url": "/images/d2.png"
         },
         {
             "index": "11",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她眼神急切，大脑飞速运转，额头上冒出汗珠。火焰越来越近，热浪袭人。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“With the fire getting closer, she must think fast. 随着火势逼近，她必须迅速思考。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/vLiQNZgRjkI/"
+            "img_url": "/images/c4.png"
         },
         {
             "index": "12",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她身体微微用力，一点一点地挪动双手，试图解开绳子，脸上露出坚毅的神情。周围火焰和浓烟不断。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“She manages to loosen the ropes bit by bit. 她设法一点一点地松开绳子。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/s5-6S5bPB4I/"
+            "img_url": "/images/h22.png"
         },
         {
             "index": "13",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她挣脱绳子后，双脚用力一蹬，身体向前冲去，眼神充满斗志，冲向那两个男人。周围火焰和浓烟被她的动作带起波动。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“As she breaks free, she rushes towards the two men. 她挣脱束缚后，冲向那两个男人。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/y-ZeEI7J7Xw/"
+            "img_url": "/images/p4.png"
         },
         {
             "index": "14",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她站在两个男人面前，神情坚定。两个男人瞪大双眼，嘴巴微张，脸上满是震惊的表情。周围火焰和浓烟作为背景。图片为美式复古漫画风格，线条硬朗，色彩偏浓郁。配图文案“They are shocked by her sudden appearance. 他们被她的突然出现惊呆了。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/AG5XDap8aso/"
+            "img_url": "/images/j4.png"
         },
         {
             "index": "15",
             "prompt": "女人，人类，穿着淡蓝色连衣裙，头发凌乱。她手握一根木棍，挥舞着与两个男人搏斗，表情勇敢无畏。随后她转身朝着远处跑去，身后是熊熊大火。最后画面是她跑到警察面前，脸上露出欣慰的笑容。色彩偏浓郁。配图文案“In the chaos, she grabs a stick and uses it to fight them off. Finally, she escapes from the blaze and runs to the police. The mystery is solved, and justice is served. 在混乱中，她抓起一根棍子击退了他们。最后，她逃离了火海，跑去报警。谜团解开了，正义得到了伸张。”，高质量渲染文字，文案中英换行，位于图片上半部分居中。",
-            "img_url": "https://s.coze.cn/t/h_Hq06VcGg0/"
+            "img_url": "/images/end1.png"
         }
     ],
     "prompt": "【美式复古漫画风格】 of 【一位年轻女性，被绑住嘴巴、双手捆住，在巨大篝火中疯狂挣扎，满脸惊恐，占据画幅中心较大比例；两个男人站在篝火旁交谈，表情各异，一个坚决一个担忧，位于画面一侧占据较小比例】, in 【熊熊燃烧的篝火场地，浓烟弥漫，周围是黑暗的环境，有一些杂乱的树枝和石头】, 【暖红色火焰光与周围的暗黑色调形成强烈对比，光影闪烁营造紧张氛围】, 【中景构图，突出人物和场景】, 【画面带有美式复古漫画的线条感和夸张表现手法】, 配图文案: \"The Woman in the Blaze A woman wakes up in a nightmare, bound and trapped in a huge blaze. As the smoky situation grows worse, she tries to find out how this happened. Can she solve the mystery and escape?\" in 【画面上方居中位置】，精准清晰渲染文字。 ",
@@ -462,7 +462,7 @@ const woman = {
     "story_intro": {
         "intro_en": "A woman wakes up in a nightmare, bound and trapped in a huge blaze. As the smoky situation grows worse, she tries to find out how this happened. Can she solve the mystery and escape?",
         "intro_zh": "一个女人在噩梦中醒来，被绑着困在大火中。随着浓烟弥漫情况恶化，她试图查明缘由。她能解开谜团逃脱吗？",
-        "cover_img": "https://s.coze.cn/t/p3d5MkXy5Q8/"
+        "cover_img": "/images/eb8781e42b3745dca77587f352b7be07~tplv-5jbd59dj06-image.png"
     },
     "story_title": {
         "title_en": "The Woman in the Blaze",
@@ -1281,7 +1281,7 @@ const hli = {
     "story_intro": {
         "intro_en": "Harry, Hermione and Ron enter a gloomy bathroom to ask Moaning Myrtle about an unusual event. Myrtle acts dramatically, and they leave after a strange encounter.",
         "intro_zh": "哈利、赫敏和罗恩进入一间阴暗的盥洗室，向哭泣的桃金娘询问一件怪事。桃金娘反应夸张，一番奇怪的相遇后他们离开了。",
-        "cover_img": "https://s.coze.cn/t/9CqHElwp8zw/"
+        "cover_img": "/images/b466b590a74d44e5b712fac768bde486~tplv-5jbd59dj06-image.png"
     },
     "story_title": {
         "title_en": "The Mysterious Encounter in the Gloomy Bathroom",
