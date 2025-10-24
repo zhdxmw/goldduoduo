@@ -44,7 +44,6 @@ export const kidsWords = {
       { en: "blue", cn: "蓝色" },
       { en: "yellow", cn: "黄色" },
       { en: "green", cn: "绿色" },
-      { en: "orange", cn: "橙色" },
       { en: "purple", cn: "紫色" },
       { en: "pink", cn: "粉色" },
       { en: "black", cn: "黑色" },

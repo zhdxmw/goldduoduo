@@ -11,33 +11,41 @@ const HomePage = () => {
       title: '魔法世界',
       subtitle: '奇幻冒险',
       icon: '🪄',
-      color: '#667eea'
+      color: '#667eea',
+      role: 'hli',
+      description: '进入神秘的魔法世界，体验奇幻冒险'
     },
     {
-      id: 'space',
-      title: '太空探索',
-      subtitle: '科幻冒险',
-      icon: '🚀',
-      color: '#764ba2'
+      id: 'princess',
+      title: '艾莎女王',
+      subtitle: '童话故事',
+      icon: '👸',
+      color: '#764ba2',
+      role: 'aisha',
+      description: '与冰雪女王一起探索童话王国'
     },
     {
       id: 'romance',
       title: '浪漫爱情',
       subtitle: '情感故事',
-      icon: '💙',
-      color: '#f093fb'
+      icon: '💕',
+      color: '#f093fb',
+      role: 'bazong',
+      description: '体验甜蜜浪漫的爱情故事'
     },
     {
       id: 'mystery',
       title: '神秘侦探',
       subtitle: '悬疑推理',
-      icon: '💙',
-      color: '#4facfe'
+      icon: '🔍',
+      color: '#4facfe',
+      role: 'woman',
+      description: '解开谜团，体验刺激的推理过程'
     }
   ];
 
-  const handleCategoryClick = (categoryId) => {
-    navigate(`/category/${categoryId}`);
+  const handleCategoryClick = (role) => {
+    navigate(`/story/${role}`);
   };
 
   const handleCreateStory = () => {
@@ -63,53 +71,26 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* 推荐故事 */}
+        {/* 故事分类 */}
         <div className="recommendations-section">
-          <h2 className="section-title">推荐故事</h2>
-          <div className="story-list">
-            <div className="story-item" onClick={() => navigate('/category/magic')}>
-              <div className="story-content">
-                <div className="story-icon">🪄</div>
-                <div className="story-info">
-                  <div className="story-name">魔法世界</div>
-                  <div className="story-count">12个故事</div>
+          <h2 className="section-title">故事分类</h2>
+          <div className="story-categories-grid">
+            {storyCategories.map((category) => (
+              <div 
+                key={category.id} 
+                className="category-card" 
+                onClick={() => handleCategoryClick(category.role)}
+                style={{ '--category-color': category.color }}
+              >
+                <div className="category-icon">{category.icon}</div>
+                <div className="category-content">
+                  <h3 className="category-title">{category.title}</h3>
+                  <p className="category-subtitle">{category.subtitle}</p>
+                  <p className="category-description">{category.description}</p>
                 </div>
+                <div className="category-arrow">→</div>
               </div>
-              <div className="story-arrow">→</div>
-            </div>
-
-            <div className="story-item" onClick={() => navigate('/category/space')}>
-              <div className="story-content">
-                <div className="story-icon">🚀</div>
-                <div className="story-info">
-                  <div className="story-name">太空探索</div>
-                  <div className="story-count">8个故事</div>
-                </div>
-              </div>
-              <div className="story-arrow">→</div>
-            </div>
-
-            <div className="story-item" onClick={() => navigate('/category/romance')}>
-              <div className="story-content">
-                <div className="story-icon">💕</div>
-                <div className="story-info">
-                  <div className="story-name">浪漫爱情</div>
-                  <div className="story-count">15个故事</div>
-                </div>
-              </div>
-              <div className="story-arrow">→</div>
-            </div>
-
-            <div className="story-item" onClick={() => navigate('/category/mystery')}>
-              <div className="story-content">
-                <div className="story-icon">🔍</div>
-                <div className="story-info">
-                  <div className="story-name">神秘侦探</div>
-                  <div className="story-count">10个故事</div>
-                </div>
-              </div>
-              <div className="story-arrow">→</div>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -118,9 +99,9 @@ const HomePage = () => {
           <button className="action-btn primary" onClick={() => navigate('/create')}>
             ✨ 创建故事
           </button>
-          <button className="action-btn secondary" onClick={() => navigate('/story/magic-academy')}>
+          {/* <button className="action-btn secondary" onClick={() => navigate('/story/magic-academy')}>
             📚 继续学习
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

@@ -18,9 +18,9 @@ function App() {
           <Route path="/tts" element={<TextToSpeechPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />
-          <Route path="/story/:storyId" element={<StoryDetailPage />} />
+          <Route path="/story/:id" element={<StoryDetailPage />} />
           <Route path="/create" element={<CreateStoryPage />} />
-          <Route path="/video/:storyId" element={<VideoPlayerPage />} />
+          <Route path="/video/:id" element={<VideoPlayerPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

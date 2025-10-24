@@ -10,6 +10,35 @@ const StoryDetailComponent = ({
   const [currentPage, setCurrentPage] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
+
+  // 单词高亮功能
+  const highlightWords = (text, wordsToHighlight) => {
+    if (!text || !wordsToHighlight || wordsToHighlight.length === 0) {
+      return text;
+    }
+
+    // 创建正则表达式，匹配单词边界，忽略大小写
+    const wordsPattern = wordsToHighlight
+      .map(word => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')) // 转义特殊字符
+      .join('|');
+    
+    const regex = new RegExp(`\\b(${wordsPattern})\\b`, 'gi');
+    
+    // 分割文本并高亮匹配的单词
+    const parts = text.split(regex);
+    
+    return parts.map((part, index) => {
+      // 检查这个部分是否是要高亮的单词
+      const isHighlighted = wordsToHighlight.some(word => 
+        part.toLowerCase() === word.toLowerCase()
+      );
+      
+      if (isHighlighted) {
+        return <span key={index} className="highlighted-word">{part}</span>;
+      }
+      return part;
+    });
+  };
   
   // 自动播放相关状态
   const [isAutoPlaying, setIsAutoPlaying] = useState(false);
@@ -27,6 +56,19 @@ const StoryDetailComponent = ({
   // 鼠标拖动相关状态
   const startMouseRef = useRef(null);
   const isMouseDraggingRef = useRef(false);
+
+  // 查看全文弹窗状态
+  const [showFullTextModal, setShowFullTextModal] = useState(false);
+
+  // 打开全文弹窗
+  const openFullTextModal = () => {
+    setShowFullTextModal(true);
+  };
+
+  // 关闭全文弹窗
+  const closeFullTextModal = () => {
+    setShowFullTextModal(false);
+  };
 
   // 根据创作状态确定可用页面
   const getAvailablePages = () => {
@@ -541,9 +583,9 @@ const StoryDetailComponent = ({
     >
       <div className="story-detail-container">
         {/* 关闭按钮 */}
-        <button className="close-button" onClick={onClose}>
+        {/* <button className="close-button" onClick={onClose}>
           ← 返回
-        </button>
+        </button> */}
 
         {/* 状态指示器 */}
         {
@@ -555,22 +597,77 @@ const StoryDetailComponent = ({
             </div>
           )
         }
-
+     {storyData.content_en && (
+                <button 
+                  className="full-text-icon" 
+                  onClick={openFullTextModal}
+                  title="查看全文"
+                >
+                  📄
+                </button>
+              )}
         {/* 主要卡片内容 */}
         <div className={`story-card fullscreen-page ${isAnimating ? 'animating' : ''}`}>
           {currentPageData.type === 'cover' && (
             <div className="cover-page">
+              {/* 查看全文按钮 */}
+         
               <div className="story-cover">
-                <div className="cover-illustration">📚</div>
-                <h1 className="story-title">
-                  {storyData.story_title?.title_zh || storyData.story_title?.title_en || storyData.title || '故事标题'}
-                </h1>
-                <p className="story-description">
-                  {storyData.story_intro?.intro_zh || storyData.story_intro?.intro_en || storyData.description || '故事简介'}
-                </p>
-                <div className="story-meta">
-                  <span className="story-genre">🎭 {storyData.genre || '故事'}</span>
-                  <span className="story-length">📖 {storyData.detailed_scenes?.length || 0} 个场景</span>
+                <div className="cover-illustration">
+                  {storyData.story_intro?.cover_img ? (
+                    <img 
+                      src={storyData.story_intro?.cover_img} 
+                      alt="故事封面"
+                      className="cover-image"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'block';
+                      }}
+                    />
+                  ) :  <div className="cover-fallback" style={{ display: storyData.intro_img_url ? 'none' : 'block' }}>
+                    📚
+                  </div>}
+             
+                </div>
+                <div className="story-content">
+                  <div className="story-title-container">
+                    {storyData.story_title?.title_zh && (
+                      <h1 className="story-title story-title-zh">
+                        {storyData.story_title.title_zh}
+                      </h1>
+                    )}
+                    {storyData.story_title?.title_en && (
+                      <h2 className="story-title story-title-en">
+                        {storyData.story_title.title_en}
+                      </h2>
+                    )}
+                    {!storyData.story_title?.title_zh && !storyData.story_title?.title_en && (
+                      <h1 className="story-title">
+                        {storyData.title || '故事标题'}
+                      </h1>
+                    )}
+                  </div>
+                  <div className="story-description-container">
+                    {storyData.story_intro?.intro_zh && (
+                      <p className="story-description story-description-zh">
+                        {storyData.story_intro.intro_zh}
+                      </p>
+                    )}
+                    {storyData.story_intro?.intro_en && (
+                      <p className="story-description story-description-en">
+                        {storyData.story_intro.intro_en}
+                      </p>
+                    )}
+                    {!storyData.story_intro?.intro_zh && !storyData.story_intro?.intro_en && (
+                      <p className="story-description">
+                        {storyData.description || '故事简介'}
+                      </p>
+                    )}
+                  </div>
+                  <div className="story-meta">
+                    <span className="story-genre">🎭 {storyData.genre || '故事'}</span>
+                    <span className="story-length">📖 {storyData.detailed_scenes?.length || 0} 个场景</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -591,6 +688,7 @@ const StoryDetailComponent = ({
       
               </div>
               <div className="scene-content">
+
                 {currentPageData.segments?.map((segment, index) => (
                   <div 
                     key={index} 
@@ -598,7 +696,7 @@ const StoryDetailComponent = ({
                   >
                     <div className="segment-text">
                       <p className={`text-en ${currentPlayingIndex === index ? 'highlight' : ''}`}>
-                        {segment.text_en}
+                        {highlightWords(segment.text_en, storyData.words)}
                         {segment.audio_url && (
                           <span 
                             className="audio-play-btn-inline"
@@ -677,12 +775,41 @@ const StoryDetailComponent = ({
         )}
 
         {/* 开始阅读按钮 */}
-        {(creationStatus === 'all_complete' || (storyData.detailed_scenes && storyData.detailed_scenes.length > 0)) && (
+        {/* {(creationStatus === 'all_complete' || (storyData.detailed_scenes && storyData.detailed_scenes.length > 0)) && (
           <button className="start-reading-button" onClick={onStartReading}>
             🎭 开始阅读故事
           </button>
-        )}
+        )} */}
       </div>
+
+      {/* 全文弹窗 */}
+      {showFullTextModal && (
+        <div className="full-text-modal-overlay" onClick={closeFullTextModal}>
+          <div className="full-text-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="full-text-modal-header">
+              <h3 className="full-text-modal-title">故事全文</h3>
+              <button 
+                className="full-text-modal-close" 
+                onClick={closeFullTextModal}
+                title="关闭"
+              >
+                ✕
+              </button>
+            </div>
+            <div className="full-text-modal-content">
+              <div className="full-text-content">
+                {storyData.content_en ? (
+                  <p className="full-text-english">
+                    {highlightWords(storyData.content_en, storyData.words)}
+                  </p>
+                ) : (
+                  <p className="no-content-message">暂无全文内容</p>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

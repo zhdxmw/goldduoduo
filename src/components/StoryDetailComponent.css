@@ -230,6 +230,13 @@
   box-sizing: border-box;
 }
 
+.story-cover {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .cover-background {
   height: 50%;
   display: flex;
@@ -243,27 +250,133 @@
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.cover-content {
+/* 封面插图容器 */
+.cover-illustration {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* 封面图片样式 */
+.cover-illustration .cover-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* 封面图片悬停效果 */
+.cover-illustration .cover-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* 封面回退图标 */
+.cover-fallback {
+  font-size: 80px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 故事内容容器 */
+.story-content {
   flex: 1;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* 标题容器 */
+.story-title-container {
+  margin-bottom: 16px;
 }
 
 .story-title {
   font-size: 28px;
   font-weight: bold;
   color: #1a1a1a;
-  margin: 0 0 16px 0;
+  margin: 0 0 8px 0;
   line-height: 1.2;
+  text-align: center;
+}
+
+/* 中文标题样式 */
+.story-title-zh {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* 英文标题样式 */
+.story-title-en {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+  text-align: center;
+  font-style: italic;
+}
+
+/* 描述容器 */
+.story-description-container {
+  margin-bottom: 24px;
 }
 
 .story-description {
   font-size: 16px;
   color: #666;
   line-height: 1.6;
-  margin: 0 0 24px 0;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+/* 中文描述样式 */
+.story-description-zh {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+/* 英文描述样式 */
+.story-description-en {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.7;
+  margin: 0 0 12px 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.story-meta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.story-genre,
+.story-length {
+  font-size: 14px;
+  color: #888;
+  background: #f5f5f5;
+  padding: 6px 12px;
+  border-radius: 20px;
 }
 
 .start-reading-btn {
@@ -786,7 +899,7 @@
 
 /* 自动播放控件样式 */
 .auto-play-controls {
-  position: fixed;
+  position: absolute;
   bottom: 120px;
   right: 30px;
   display: flex;
@@ -862,6 +975,25 @@
   }
 }
 
+/* 单词高亮样式 */
+.highlighted-word {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  color: #FF6E00;
+  font-weight: 700;
+  padding: 2px 4px;
+  border-radius: 4px;
+  border-bottom: 2px solid #FF6E00;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 0 1px;
+}
+
+.highlighted-word:hover {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
 /* 移动端自动播放控件优化 */
 @media (max-width: 768px) {
   .auto-play-controls {
@@ -878,5 +1010,186 @@
   .auto-play-status {
     font-size: 11px;
     padding: 6px 10px;
+  }
+}
+
+/* 查看全文icon按钮 */
+.full-text-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.full-text-icon:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.full-text-icon:active {
+  transform: scale(0.95);
+}
+
+/* 确保scene-content容器是相对定位 */
+.scene-content {
+  position: relative;
+}
+
+/* 全文弹窗遮罩层 */
+.full-text-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* 全文弹窗主体 */
+.full-text-modal {
+  background: white;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+  overflow: hidden;
+}
+
+/* 弹窗头部 */
+.full-text-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e5e5e5;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.full-text-modal-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.full-text-modal-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.full-text-modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* 弹窗内容区域 */
+.full-text-modal-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.full-text-content {
+  line-height: 1.8;
+}
+
+.full-text-english {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  text-align: justify;
+  word-spacing: 2px;
+}
+
+.no-content-message {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  margin: 40px 0;
+}
+
+/* 弹窗动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .full-text-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    top: 12px;
+    right: 12px;
+  }
+
+  .full-text-modal {
+    width: 95%;
+    max-height: 85vh;
+    margin: 0 10px;
+  }
+
+  .full-text-modal-header {
+    padding: 16px 20px;
+  }
+
+  .full-text-modal-title {
+    font-size: 16px;
+  }
+
+  .full-text-modal-content {
+    padding: 20px;
+  }
+
+  .full-text-english {
+    font-size: 15px;
   }
 }

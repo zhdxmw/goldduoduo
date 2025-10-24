@@ -4,7 +4,7 @@ class CozeService {
   constructor() {
     this.baseURL = config.coze.baseUrl;
     this.token = config.coze.apiKey;
-    this.workflowId = '7564605518636023842'; // 故事生成工作流ID
+    this.workflowId = '7564702124870746164'; // 故事生成工作流ID
   }
 
   // 调用扣子工作流生成故事
